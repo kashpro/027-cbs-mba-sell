@@ -1,0 +1,46 @@
+.recall {
+  padding-top: 71px;
+  padding-bottom: 71px;
+  background-color: #1A3788;
+  &__container {
+    
+  }
+  &__form {
+    display: flex;
+    align-items: center; 
+    // background-color: $temp1;
+    justify-content: center;
+  }
+  &__input {
+    flex: 0 1 426px;
+    padding: 14px 25px;
+    background: rgba(255, 255, 255, 0.41);
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    // width: 426px;
+    margin-right: 20px;
+    &::placeholder {
+      color: rgba(#FFFFFF, 0.5);
+    }
+  }
+  &__btn {
+    flex: 0 1 301px;
+    padding: 18px;
+    width: 301px;
+    background-color: #ffffff;
+    color: #1A3788;
+    margin-right: 34px;
+//     font-size: 20px;
+// line-height: 150%;
+  }
+  &__text {
+    flex: 0 1 386px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    
+  }
+}

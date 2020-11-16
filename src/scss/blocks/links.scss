@@ -1,0 +1,27 @@
+.links {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #161616;
+  &__container {
+
+  }
+  &__list {
+    margin-left: 57px;
+    display: flex;
+  }
+  &__item {
+    & + & {
+      margin-left: 30px;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 150%;
+    transition: all 0.2s ease;
+    color: rgba(#FFFFFF, 0.4);
+    &:hover {
+      color: rgba(#FFFFFF, 1);
+      text-decoration: underline;
+    }
+  }
+}

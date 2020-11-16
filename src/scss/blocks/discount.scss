@@ -1,0 +1,42 @@
+.discount {
+  margin-bottom: 76px;
+  &__container {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E64B52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__value {
+    // background-color: $temp1;
+    font-size: 24px;
+    // line-height: 105%;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    max-width: 109px;
+
+
+    span {
+      font-size: 44px;
+      font-weight: 700;
+    }
+  }
+  &__title {
+    // background-color: $temp2;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    max-width: 652px;
+
+  }
+  &__btn {
+    // background-color: $temp1;
+    width: 328px;
+    padding: 18px;
+  }
+}

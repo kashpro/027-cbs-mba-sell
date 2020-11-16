@@ -1,0 +1,84 @@
+.result {
+  padding-top: 170px;
+  margin-bottom: 85px;
+  &__container {
+
+  }
+  &__box1 {
+    // background-color: $temp6;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  &__title {
+    flex: 0 1 50%;
+    max-width: 549px;
+    margin-top: 96px;
+  }
+  &__slider {
+    // background-color: $temp4;
+    flex: 0 1 50%;
+  }
+  &__page {
+    font-size: 40px;
+    line-height: 135%;
+    color: #1A3788;
+    margin-bottom: 30px;
+    span {
+      font-weight: bold;
+      font-size: 100px;
+    }
+  }
+  &__text1 {
+    font-size: 30px;
+    line-height: 135%;
+    color: #1A3788;
+  }
+  &__arrows {
+    margin-top: 20px;
+    display: flex;
+  }
+  &__arrow {
+    width: 56px;
+    height: 56px;
+    // background-color: $temp1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-image: url("../assets/images/arrow_icon.svg");
+    // background-size: 26px;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      background-color: #E64B52;
+      svg {
+        fill: #ffffff;
+      }
+    }
+    svg {
+      width: 26px;
+      fill: #1A3788;
+    }
+    &--prev {
+      margin-right: 23px;
+      transform: rotate(180deg);
+    }
+    &--next {
+    
+    }
+  }
+  &__text2 {
+    // background-color: $temp5;
+    border: 4px solid #E64B52;
+    text-align: center;
+    padding: 30px 133px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 135%;
+    color: #1A3788;
+
+
+  }
+}

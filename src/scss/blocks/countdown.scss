@@ -1,0 +1,46 @@
+.countdown {
+  margin-bottom: 75px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 65px;
+    text-align: center;
+    color: #1A3788;
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & + & {
+      margin-left: 20px;
+    }
+  }
+  &__digit {
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 80px;
+    color: #0C1E42;
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+    background-color: #C9E2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  &__label {
+    font-size: 24px;
+    line-height: 28px;
+    color: #0C1E42;
+  }
+}

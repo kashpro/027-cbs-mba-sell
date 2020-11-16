@@ -1,0 +1,135 @@
+.speakers {
+  background-color: rgba(201, 226, 255, 0.3);
+  background-image: url("../assets/images/cbs_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 250px;
+  background-size: 390px;
+  padding-top: 76px;
+  padding-bottom: 85px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    // background-color: #f90;
+  }
+  &__box1 {
+    
+  }
+  &__text1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    display: block;
+  }
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__list1 {
+    // background-color: $temp5;
+    margin-bottom: 100px;
+  }
+  &__item1 {
+    // background-color: $temp4;
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+  }
+  &__image1 {
+    margin-left: 107px;
+    flex: 0 1 360px;
+    width: 360px;
+    height: 360px;
+    line-height: 0;
+    margin-right: 85px;
+    align-self: flex-start;
+    
+    img {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__box2 {
+    flex: 0 1 671px;
+  }
+  &__name1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 28px;
+    color: #0C1E42;
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__desc {
+
+  }
+  &__text2 {
+    font-size: 22px;
+    line-height: 135%;
+    color: #0C1E42;
+    font-weight: normal;
+    & + & {
+      margin-top: 30px;
+    }
+  }
+  // &__list2 {
+  //   display: flex;
+  //   margin-bottom: 60px;
+  // }
+  // &__item2 {
+  //   flex: 0 1 427px;
+  //   // background-color: $temp3;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   & + & {
+  //     margin-left: 20px;
+  //   }
+  // }
+  // &__image2 {
+  //   position: relative;
+  //   z-index: 10;
+  //   line-height: 0;
+  //   width: 284px;
+  //   height: 284px;
+  //   margin-bottom: -65px;
+  //   img {
+  //     border-radius: 50%;
+  //     overflow: hidden;
+  //     width: 100%;
+  //     height: 100%;
+  //     object-fit: cover;
+  //   }
+  // }
+  // &__box3 {
+  //   position: relative;
+  //   z-index: 0;
+  //   // background-color: $temp1;
+  //   background: #FFFFFF;
+  //   padding-top: 85px;
+  // }
+  // &__name2 {
+  //   display: block;
+  //   font-weight: 500;
+  //   font-size: 24px;
+  //   line-height: 28px;
+  //   color: #0C1E42;
+  //   text-align: center;
+  //   margin-bottom: 2px;
+  // }
+  // &__role {
+  //   display: block;
+  //   font-size: 16px;
+  //   line-height: 150%;
+  //   text-align: center;    
+  //   color: #BBC6DD;
+  //   margin-bottom: 20px;
+  // }
+  &__btn {
+    padding: 14px;
+    width: 365px;
+    align-self: center;
+  }
+}

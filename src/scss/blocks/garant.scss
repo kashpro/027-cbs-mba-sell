@@ -1,0 +1,16 @@
+.garant {
+  background: #E64B52;
+  transform: skewY(-3deg);
+  padding: 120px 0;
+  &__container {
+
+  }
+  &__title {
+    transform: skewY(3deg);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}

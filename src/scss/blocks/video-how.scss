@@ -1,0 +1,41 @@
+.video-how {
+  margin-bottom: 80px;
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__video {
+    width: 1023px;
+    height: 737px;
+    background-image: url("../assets/images/video_how_bg.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  &__btn {
+    margin-top: -100px;
+    cursor: pointer;
+    margin-bottom: 33px;
+    background: url("../assets/images/play_red_icon.svg");
+    width: 120px;
+    height: 120px;
+    font-size: 0;
+    // border-radius: 50%;
+    border: none;
+    transition: all 0.2s ease;
+    &:hover {
+      filter: brightness(1.5);
+    }
+  }
+  &__text {
+    max-width: 517px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}

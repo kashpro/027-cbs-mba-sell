@@ -1,0 +1,41 @@
+.exp {
+  margin-bottom: 80px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    flex: 0 1 100%;
+    max-width: 407px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 65px;
+    color: #1A3788;
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    flex: 0 1 650px;
+  }
+  &__item {
+    position: relative;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+    line-height: 135%;
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #E64B52;
+      top: 25px;
+      left: -32px;
+    }
+    & + & {
+      border-top: 1px solid #4A547E;
+    }
+  }
+}

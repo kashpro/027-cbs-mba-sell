@@ -5,25 +5,27 @@ if (typeof cfg != "undefined" && cfg.showStats === true) {Development.addWindowS
 /* App styles */
 import "@/scss/main.scss";
 
-/* Preloader (old-style function) */
-(function preloader(){
-  window.addEventListener("load", hidePreloader);
-  function hidePreloader(){
-    var preloader = document.querySelector('.js-preloader');
-    preloader.style.display = 'none';
+//program tabs
+{{
+  const $programList = document.querySelector(".js-program-list");
+  const $programBox1All = document.querySelectorAll(".js-program-box1");
+  const $programContentAll = document.querySelectorAll(".js-program-content");
+  $programList.addEventListener("click", programListClickHandler, false);
+
+  function programListClickHandler(e) {
+    // console.log(e.target);
+    // console.log(e.target.closest(".js-program-box1"));
+    $programBox1All.forEach( (item) => {item.classList.remove("program__box1--active");});
+    $programContentAll.forEach( (item) => {item.classList.add("fade");});
+    const $programBox1 = e.target.closest(".js-program-box1");
+    if ($programBox1) {
+      const $content = $programBox1.nextElementSibling;
+      if ($content) {$content.classList.remove("fade");}
+      // console.log($content);
+      $programBox1.classList.add("program__box1--active");
+    }
   }
-})();
 
-/* Vue app */
-import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
+  
 
-Vue.config.productionTip = false;
-
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#vue-app');
+}}

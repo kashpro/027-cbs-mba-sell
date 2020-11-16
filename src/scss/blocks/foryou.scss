@@ -1,0 +1,74 @@
+.foryou {
+  $this: &;
+  &__container {
+
+  }
+  &__title {
+    // font-weight: bold;
+    // font-size: 50px;
+    // line-height: 65px;
+    // color: #1A3788;
+    margin-bottom: 50px;
+    // span {
+    //   color: #E64B52;
+    // }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  &__item {
+    flex: 1 1 426px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    &:nth-child(1) {
+      margin-right: 20px;
+      background: #EAF4FF;
+    }
+    &:nth-child(2) {
+      margin-right: 20px;
+      background: #C9E2FF;
+    }
+    &:nth-child(3) {
+      background: #A2CBFC;
+    }
+    &:nth-child(4) {
+      flex: 1 1 100%;
+      margin-top: 20px;
+      background: #1A3788;
+      display: flex;
+      #{$this}__role {
+        color: #ffffff;
+        min-height: auto;
+        margin-bottom: 0;
+        margin-right: 42px;
+        flex-shrink: 0;
+        max-width: 326px;
+      }
+      #{$this}__text {
+        color: #ffffff;
+        max-width: 804px;
+      }
+    }
+  }
+  &__role {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1A3788;
+    min-height: 132px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 135%;
+    color: #1A3788;
+  }
+  &__btn {
+    width: 313px;
+  }
+}

@@ -1,0 +1,25 @@
+.strategy {
+  margin-bottom: 254px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    flex: 0 1 50%;
+    max-width: 510px;
+    // background-color: $temp1;
+  }
+  &__box1 {
+    flex: 0 1 50%;
+    // background-color: $temp3;
+  }
+  &__text {
+    max-width: 613px;
+    font-size: 30px;
+    line-height: 135%;
+    color: #1A3788;
+    & + & {
+      margin-top: 30px;
+    }
+  }
+}

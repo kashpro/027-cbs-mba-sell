@@ -1,0 +1,67 @@
+.diff {
+  $this: &;
+  &__container {
+    display: flex;
+  }
+  &__title {
+    // background-color: $temp1;
+    flex: 0 1 433px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 65px;
+    color: #1A3788;
+  }
+  &__list {
+    // background-color: $temp2;
+    flex: 0 1 872px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    padding-left: 50px;
+    padding-right: 27px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex: 0 1 50%;
+    &:nth-child(1) {
+      background: #E64B52;
+      // padding-right: 50px; //!!!
+      // #{$this}__text { //!!!
+      //   font-size: 30px;
+      // }
+    }
+    &:nth-child(2) {
+      background: #EAF4FF;
+      #{$this}__subtitle {
+        color: #0C1E42;
+      }
+      #{$this}__text {
+        color: #0C1E42;
+      }
+    }
+    &:nth-child(3) {
+      background: #EAF4FF;
+      #{$this}__subtitle {
+        color: #0C1E42;
+      }
+      #{$this}__text {
+        color: #0C1E42;
+      }
+    }
+    &:nth-child(4) {
+      background: #1759F7;
+    }
+  }
+  &__subtitle {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 135%;
+    color: #FFFFFF;
+  }
+}

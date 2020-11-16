@@ -1,0 +1,45 @@
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #1A3788;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-left: 70px;
+    margin-right: 24px;
+    padding-right: 28px;
+    border-right: 1px solid #ffffff;
+  }
+  &__box1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+  }
+  &__text1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+  }
+  &__text2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-right: auto;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-right: 30px;
+  }
+  &__btn {
+    margin-right: auto;
+    width: 270px;
+    padding: 18px;
+  }
+}

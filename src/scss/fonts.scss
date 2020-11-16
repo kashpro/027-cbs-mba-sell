@@ -1,20 +1,29 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Graphik LCG';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto'),
-       url('../assets/fonts/Roboto.woff2') format('woff2');
+  src: local('Graphik LCG'),
+       url('../assets/fonts/Graphik-Regular-Web.woff2') format('woff2'),
+       url('../assets/fonts/Graphik-Regular-Web.woff') format('woff');
 }
 
-/* roboto-100 - latin Full Example */
-// @font-face {
-//   font-family: 'Roboto';
-//   font-style: normal;
-//   font-weight: 100;
-//   src: local('Roboto Thin'), local('Roboto-Thin'),
-//        url('../fonts/roboto-v19-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-//        url('../fonts/roboto-v19-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-// }
+@font-face {
+  font-family: 'Graphik LCG';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Graphik LCG'),
+       url('../assets/fonts/Graphik-Medium-Web.woff2') format('woff2'),
+       url('../assets/fonts/Graphik-Medium-Web.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Graphik LCG';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Graphik LCG'),
+       url('../assets/fonts/Graphik-Bold-Web.woff2') format('woff2'),
+       url('../assets/fonts/Graphik-Bold-Web.woff') format('woff');
+}
 
 /*
 font-face generator:
