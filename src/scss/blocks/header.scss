@@ -36,6 +36,10 @@
     line-height: 150%;
     color: #FFFFFF;
     margin-right: 30px;
+    &:hover {
+      text-decoration: underline;
+      color: #dddddd;
+    }
   }
   &__btn {
     margin-right: auto;

@@ -3,6 +3,8 @@
 @import "./helpers.scss";
 @import "./global.scss";
 
+@import "slick-carousel/slick/slick.scss";
+
 /*blocks*/
 @import "./blocks/btn.scss";
 @import "./blocks/section-title.scss";
@@ -26,12 +28,13 @@
 @import "./blocks/when.scss";
 @import "./blocks/for.scss";
 @import "./blocks/diff.scss";
-@import "./blocks/solution.scss";
+// @import "./blocks/solution.scss";
 @import "./blocks/cert.scss";
 @import "./blocks/why.scss";
 @import "./blocks/status.scss";
 @import "./blocks/feedback.scss";
 @import "./blocks/about.scss";
+@import "./blocks/learn.scss";
 @import "./blocks/cost.scss";
 @import "./blocks/cashback.scss";
 @import "./blocks/countdown.scss";
@@ -39,3 +42,6 @@
 @import "./blocks/action.scss";
 @import "./blocks/recall.scss";
 @import "./blocks/links.scss";
+
+@import "./blocks/modal.scss";
+@import "./blocks/modal-content.scss";

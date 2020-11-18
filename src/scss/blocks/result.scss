@@ -15,7 +15,7 @@
     max-width: 549px;
     margin-top: 96px;
   }
-  &__slider {
+  &__box2 {
     // background-color: $temp4;
     flex: 0 1 50%;
   }
@@ -49,6 +49,7 @@
     // background-size: 26px;
     // background-repeat: no-repeat;
     // background-position: center;
+    transition: all 0.2s ease;
     border-radius: 50%;
     cursor: pointer;
     &:hover {

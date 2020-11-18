@@ -1,0 +1,121 @@
+.learn {
+  &__title {
+    margin-bottom: 65px;
+  }
+  &__list2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item2 {
+    margin-bottom: 65px;
+    font-size: 0;
+    background-image: url("../assets/images/logo_icons_sprite_02.png");
+    flex: 0 0 215px;
+    height: 92px;
+    &:not(:nth-child(6n)) {
+      margin-right: 6px;
+    }
+    &:nth-child(1) {
+      background-position: 0px 0;
+    }
+    &:nth-child(2) {
+      background-position: -215px 0;
+    }
+    &:nth-child(3) {
+      background-position: -430px 0;
+    }
+    &:nth-child(4) {
+      background-position: -645px 0;
+    }
+    &:nth-child(5) {
+      background-position: -860px 0;
+    }
+    &:nth-child(6) {
+      background-position: -1075px 0;
+    }
+    &:nth-child(7) {
+      background-position: -1290px 0;
+    }
+    &:nth-child(8) {
+      background-position: -1505px 0;
+    }
+    &:nth-child(9) {
+      background-position: -1720px 0;
+    }
+    &:nth-child(10) {
+      background-position: -1935px 0;
+    }
+    &:nth-child(11) {
+      background-position: -2150px 0;
+    }
+    &:nth-child(12) {
+      background-position: -2365px 0;
+    }
+    &:nth-child(13) {
+      background-position: -2580px 0;
+    }
+    &:nth-child(14) {
+      background-position: -2795px 0;
+    }
+    &:nth-child(15) {
+      background-position: -3010px 0;
+    }
+    &:nth-child(16) {
+      background-position: -3225px 0;
+    }
+    &:nth-child(17) {
+      background-position: -3440px 0;
+    }
+    &:nth-child(18) {
+      background-position: -3655px 0;
+    }
+    &:nth-child(19) {
+      background-position: -3870px 0;
+    }
+    &:nth-child(20) {
+      background-position: -4085px 0;
+    }
+    &:nth-child(21) {
+      background-position: -4300px 0;
+    }
+    &:nth-child(22) {
+      background-position: -4515px 0;
+    }
+    &:nth-child(23) {
+      background-position: -4730px 0;
+    }
+    &:nth-child(24) {
+      background-position: -4945px 0;
+    }
+    &:nth-child(25) {
+      background-position: -5160px 0;
+    }
+    &:nth-child(26) {
+      background-position: -5375px 0;
+    }
+    &:nth-child(27) {
+      background-position: -5590px 0;
+    }
+    &:nth-child(28) {
+      background-position: -5805px 0;
+    }
+    &:nth-child(29) {
+      background-position: -6020px 0;
+    }
+    &:nth-child(30) {
+      background-position: -6235px 0;
+    }
+    &:nth-child(31) {
+      background-position: -6450px 0;
+    }
+    &:nth-child(32) {
+      background-position: -6665px 0;
+    }
+    &:nth-child(33) {
+      background-position: -6880px 0;
+    }
+    &:nth-child(34) {
+      background-position: -7095px 0;
+    }
+  }
+}

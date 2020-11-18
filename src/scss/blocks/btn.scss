@@ -1,4 +1,5 @@
 .btn {
+  transition: all 0.2s ease;
   cursor: pointer;
   display: inline-block;
   background: #E64B52;
@@ -10,13 +11,22 @@
   padding: 26px;
   color: #FFFFFF;
   line-height: 1;
+  &:hover {
+    background: #a62B32;
+  }
   &--white {
     background-color: #ffffff;
     color: #E64B52;
+    &:hover {
+      background: #dddddd;
+    }
     // border: 1px solid #ffffff;
   }
   &--yellow {
     background-color: #F1C24A;
     color: #0C1E42;
+    &:hover {
+      background: #d1a22A;
+    }
   }
 }

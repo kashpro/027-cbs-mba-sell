@@ -22,8 +22,15 @@
     color: #FFFFFF;
     // width: 426px;
     margin-right: 20px;
+    // transition: all 0.2s ease;
     &::placeholder {
       color: rgba(#FFFFFF, 0.5);
+      // transition: all 0.2s ease;
+    }
+    &:hover, &:active {
+      &::placeholder {
+        color: rgba(#FFFFFF, 1);
+      }
     }
   }
   &__btn {
@@ -33,6 +40,9 @@
     background-color: #ffffff;
     color: #1A3788;
     margin-right: 34px;
+    &:hover {
+      background: #dddddd;
+    }
 //     font-size: 20px;
 // line-height: 150%;
   }

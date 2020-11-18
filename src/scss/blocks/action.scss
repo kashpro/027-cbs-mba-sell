@@ -88,7 +88,7 @@
     cursor: pointer;
     transition: all 0.2s ease;
     &:hover {
-      color: #E64B52;;
+      color: #E64B52;
     }
   }
   &__link {
@@ -122,12 +122,14 @@
     }
   }
   &__num {
+    opacity: 0.8;
     position: relative;
     top: -10px;
     font-weight: bold;
     font-size: 40px;
     line-height: 60px;
-    color: #E64B52;
+    // color: #E64B52;
+    color: #ffffff;
     flex-shrink: 0;
     margin-right: 15px;
   }

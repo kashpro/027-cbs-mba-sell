@@ -41,23 +41,42 @@
       margin-top: 30px;
     }
   }
+  // &__btn {
+  //   width: 365px;
+  //   padding: 18px;
+  //   padding-left: 55px;
+  //   position: relative;
+  //   &::before {
+  //     position: absolute;
+  //     content: "";
+  //     display: block;
+  //     width: 31px;
+  //     height: 35px;
+  //     background-image: url("../assets/images/gift_icon.svg");
+  //     // top: 0;
+  //     left: 0;
+  //     transform: translateY(-50%);
+  //     top: calc(50% - 2px);
+  //     left: 70px;
+  //   }
+  // }
   &__btn {
     width: 365px;
     padding: 18px;
-    padding-left: 55px;
-    position: relative;
-    &::before {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 31px;
-      height: 35px;
-      background-image: url("../assets/images/gift_icon.svg");
-      // top: 0;
-      left: 0;
-      transform: translateY(-50%);
-      top: calc(50% - 2px);
-      left: 70px;
-    }
+    // padding-left: 55px;
+    // position: relative;
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   display: block;
+    //   width: 31px;
+    //   height: 35px;
+    //   background-image: url("../assets/images/gift_icon.svg");
+    //   // top: 0;
+    //   left: 0;
+    //   transform: translateY(-50%);
+    //   top: calc(50% - 2px);
+    //   left: 70px;
+    // }
   }
 }

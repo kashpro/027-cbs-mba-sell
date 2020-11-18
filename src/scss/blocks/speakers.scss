@@ -12,7 +12,7 @@
     // background-color: #f90;
   }
   &__box1 {
-    
+    transition: all 0.5s ease;
   }
   &__text1 {
     font-weight: bold;
@@ -25,8 +25,18 @@
     margin-bottom: 90px;
   }
   &__list1 {
+    transition: all 0.2s ease;
+    &:last-child {
+      // margin-bottom: 100px;
+    }
+    &--hide {
+      // position: relative;
+      display: none;
+      // visibility: hidden;
+      // opacity: 0;
+    }
     // background-color: $temp5;
-    margin-bottom: 100px;
+    
   }
   &__item1 {
     // background-color: $temp4;
@@ -132,4 +142,10 @@
     width: 365px;
     align-self: center;
   }
+}
+
+
+//slick fixes
+.slick-list {
+  padding-top: 20px;
 }

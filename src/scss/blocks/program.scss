@@ -29,7 +29,7 @@
     padding-right: 28px;
     padding-left: 28px;
     padding-bottom: 22px;
-    border: 2px solid transparent;
+    // border: 2px solid transparent;
     &:hover {
       #{$this}__module {
         opacity: 1;
@@ -39,7 +39,8 @@
       }
     }
     &--active {
-      border: 2px solid #FFFFFF;
+      // border: 2px solid #FFFFFF;
+      background-color: #E64B52;
       #{$this}__module {
         opacity: 1;
       }
