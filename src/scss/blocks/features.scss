@@ -1,10 +1,22 @@
 .features {
   margin-bottom: 80px;
+  @media (max-width: 991px) {
+	  margin-bottom: 57px;
+  }
+  @media (max-width: 767px) {
+		margin-bottom: 30px;
+	}
   &__container {
-
+    @media (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   &__list {
     display: flex;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
   }
   &__item {
     flex: 0 1 427px;
@@ -14,11 +26,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 1365px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media (max-width: 991px) {
+      flex: 0 1 auto;
+      padding: 55px 49px 48px 45px;
+      flex-direction: row;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 35px 19px;
+    }
     img {
       margin-bottom: 22px;
+      @media (max-width: 991px) {
+        margin-bottom: 0;
+        margin-right: 39px;
+        flex: 0 0 auto;
+      }
+      @media (max-width: 767px) {
+        margin-right: 0;
+        margin-bottom: 21px;
+      }
     }
     & + & {
       margin-left: 20px;
+      @media (max-width: 991px) {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+      @media (max-width: 767px) {
+        margin-top: 10px;
+      }
     }
     &:nth-child(1) {
       background: #C9E2FF;
@@ -37,5 +78,12 @@
     text-align: center;
     font-size: 20px;
     line-height: 120%;
+    @media (max-width: 991px) {
+      max-width: none;
+      text-align: left;
+    }
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
   }
 }

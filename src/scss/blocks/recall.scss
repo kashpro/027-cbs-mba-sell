@@ -10,6 +10,9 @@
     align-items: center; 
     // background-color: $temp1;
     justify-content: center;
+    @media (max-width: 1365px) {
+      flex-direction: column;
+    }
   }
   &__input {
     flex: 0 1 426px;
@@ -23,6 +26,12 @@
     // width: 426px;
     margin-right: 20px;
     // transition: all 0.2s ease;
+    @media (max-width: 1365px) {
+      flex: 0 1 auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 400px;
+    }
     &::placeholder {
       color: rgba(#FFFFFF, 0.5);
       // transition: all 0.2s ease;
@@ -40,6 +49,11 @@
     background-color: #ffffff;
     color: #1A3788;
     margin-right: 34px;
+    @media (max-width: 1365px) {
+      flex: 0 1 auto;
+      margin-right: 0;
+      width: 400px;
+    }
     &:hover {
       background: #dddddd;
     }
@@ -51,6 +65,10 @@
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
-    
+    @media (max-width: 1365px) {
+      order: -1;
+      flex: 0 1 auto;
+      margin-bottom: 30px;
+    }
   }
 }

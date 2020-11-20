@@ -1,10 +1,27 @@
 .learn {
+  @media (max-width: 767px) {
+		margin-bottom: 74px;
+	}
   &__title {
     margin-bottom: 65px;
+    @media (max-width: 1365px) {
+      text-align: center;
+    }
+    @media (max-width: 991px) {
+      line-height: 50px;
+      margin-bottom: 70px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 26px;
+    }
   }
   &__list2 {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 1365px) {
+      justify-content: center;
+    }
   }
   &__item2 {
     margin-bottom: 65px;
@@ -12,110 +29,242 @@
     background-image: url("../assets/images/logo_icons_sprite_02.png");
     flex: 0 0 215px;
     height: 92px;
+    @media (max-width: 991px) {
+      margin-bottom: 45px;
+    }
+    @media (max-width: 767px) {
+      // background-color: $temp1;
+      background-image: url("../assets/images/logo_icons_sprite_02_mob.png");
+      flex: 0 0 112px;
+      height: 48px;
+      margin-bottom: 0;
+      margin-left: 3px !important;
+      margin-right: 3px !important;
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+    }
     &:not(:nth-child(6n)) {
       margin-right: 6px;
+      @media (max-width: 1365px) {
+        margin-right: 0;
+      }
+    }
+    &:not(:nth-child(3n)) {
+      @media (max-width: 1365px) {
+        margin-right: 100px;
+      }
+      @media (max-width: 991px) {
+        margin-right: 45px;
+      }
+      @media (max-width: 767px) {
+        margin-right: 0;
+      }
+    }
+    &:last-child {
+      @media (max-width: 1365px) {
+        margin-right: 0;
+      }
     }
     &:nth-child(1) {
       background-position: 0px 0;
     }
     &:nth-child(2) {
       background-position: -215px 0;
+      @media (max-width: 767px) {
+        background-position: -112px 0;
+      }
     }
     &:nth-child(3) {
       background-position: -430px 0;
+      @media (max-width: 767px) {
+        background-position: -224px 0;
+      }
     }
     &:nth-child(4) {
       background-position: -645px 0;
+      @media (max-width: 767px) {
+        background-position: -336px 0;
+      }
     }
     &:nth-child(5) {
       background-position: -860px 0;
+      @media (max-width: 767px) {
+        background-position: -448px 0;
+      }
     }
     &:nth-child(6) {
       background-position: -1075px 0;
+      @media (max-width: 767px) {
+        background-position: -560px 0;
+      }
     }
     &:nth-child(7) {
       background-position: -1290px 0;
+      @media (max-width: 767px) {
+        background-position: -672px 0;
+      }
     }
     &:nth-child(8) {
       background-position: -1505px 0;
+      @media (max-width: 767px) {
+        background-position: -784px 0;
+      }
     }
     &:nth-child(9) {
       background-position: -1720px 0;
+      @media (max-width: 767px) {
+        background-position: -896px 0;
+      }
     }
     &:nth-child(10) {
       background-position: -1935px 0;
+      @media (max-width: 767px) {
+        background-position: -1008px 0;
+      }
     }
     &:nth-child(11) {
       background-position: -2150px 0;
+      @media (max-width: 767px) {
+        background-position: -1120px 0;
+      }
     }
     &:nth-child(12) {
       background-position: -2365px 0;
+      @media (max-width: 767px) {
+        background-position: -1232px 0;
+      }
     }
     &:nth-child(13) {
       background-position: -2580px 0;
+      @media (max-width: 767px) {
+        background-position: -1344px 0;
+      }
     }
     &:nth-child(14) {
       background-position: -2795px 0;
+      @media (max-width: 767px) {
+        background-position: -1456px 0;
+      }
     }
     &:nth-child(15) {
       background-position: -3010px 0;
+      @media (max-width: 767px) {
+        background-position: -1568px 0;
+      }
     }
     &:nth-child(16) {
       background-position: -3225px 0;
+      @media (max-width: 767px) {
+        background-position: -1680px 0;
+      }
     }
     &:nth-child(17) {
       background-position: -3440px 0;
+      @media (max-width: 767px) {
+        background-position: -1792px 0;
+      }
     }
     &:nth-child(18) {
       background-position: -3655px 0;
+      @media (max-width: 767px) {
+        background-position: -1904px 0;
+      }
     }
     &:nth-child(19) {
       background-position: -3870px 0;
+      @media (max-width: 767px) {
+        background-position: -2016px 0;
+      }
     }
     &:nth-child(20) {
       background-position: -4085px 0;
+      @media (max-width: 767px) {
+        background-position: -2128px 0;
+      }
     }
     &:nth-child(21) {
       background-position: -4300px 0;
+      @media (max-width: 767px) {
+        background-position: -2240px 0;
+      }
     }
     &:nth-child(22) {
       background-position: -4515px 0;
+      @media (max-width: 767px) {
+        background-position: -2352px 0;
+      }
     }
     &:nth-child(23) {
       background-position: -4730px 0;
+      @media (max-width: 767px) {
+        background-position: -2458px 0;
+      }
     }
     &:nth-child(24) {
       background-position: -4945px 0;
+      @media (max-width: 767px) {
+        background-position: -2572px 0;
+      }
     }
     &:nth-child(25) {
       background-position: -5160px 0;
+      @media (max-width: 767px) {
+        background-position: -2688px 0;
+      }
     }
     &:nth-child(26) {
       background-position: -5375px 0;
+      @media (max-width: 767px) {
+        background-position: -2794px 0;
+      }
     }
     &:nth-child(27) {
       background-position: -5590px 0;
+      @media (max-width: 767px) {
+        background-position: -2908px 0;
+      }
     }
     &:nth-child(28) {
       background-position: -5805px 0;
+      @media (max-width: 767px) {
+        background-position: -3024px 0;
+      }
     }
     &:nth-child(29) {
       background-position: -6020px 0;
+      @media (max-width: 767px) {
+        background-position: -3136px 0;
+      }
     }
     &:nth-child(30) {
       background-position: -6235px 0;
+      @media (max-width: 767px) {
+        background-position: -3248px 0;
+      }
     }
     &:nth-child(31) {
       background-position: -6450px 0;
+      @media (max-width: 767px) {
+        background-position: -3360px 0;
+      }
     }
     &:nth-child(32) {
       background-position: -6665px 0;
+      @media (max-width: 767px) {
+        background-position: -3472px 0;
+      }
     }
     &:nth-child(33) {
       background-position: -6880px 0;
+      @media (max-width: 767px) {
+        background-position: -3584px 0;
+      }
     }
     &:nth-child(34) {
       background-position: -7095px 0;
+      @media (max-width: 767px) {
+        background-position: -3692px 0;
+      }
     }
   }
 }

@@ -12,15 +12,39 @@
     text-align: center;
     color: #1A3788;
     margin-bottom: 92px;
+    @media (max-width: 991px) {
+      font-size: 40px;
+      line-height: 55px;
+      margin-bottom: 106px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 43px;
+    }
   }
   &__box1 {
     display: flex;
     margin-bottom: 66px;
+    @media (max-width: 991px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 25px;
+    }
   }
   &__image {
     line-height: 0;
     flex: 0 0 346px;
     margin-right: 182px;
+    @media (max-width: 991px) {
+     flex: 0 1 auto;
+     margin-right: 0;
+    }
+    @media (max-width: 767px) {
+      width: 231px;
+    }
   }
   &__text2 {
     font-size: 40px;
@@ -28,19 +52,48 @@
     text-align: center;
     color: #1A3788;
     margin-bottom: 45px;
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 135%;
+      color: #0C1E42;
+      max-width: 282px;
+    }
   }
   &__btn {
     width: 365px;
     padding: 18px;
+    @media (max-width: 991px) {
+      width: 340px;
+    }
   }
   &__list {
     list-style: none;
+    @media (max-width: 991px) {
+      margin-bottom: 63px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 0;
+      padding-left: 0;
+      padding-left: 63px;
+      margin-bottom: 21px;
+    }
   }
   &__item {
     position: relative;
     padding-top: 25px;
     padding-bottom: 25px;
     max-width: 668px;
+    @media (max-width: 991px) {
+      max-width: 594px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 22px;
+      padding-bottom: 22px;
+      max-width: none;
+    }
     & + & {
       border-top: 1px solid #4A547E;;
     }
@@ -53,10 +106,18 @@
     color: #E64B52;
     left: -91px;
     top: 25px;
+    @media (max-width: 991px) {
+      left: -65px;
+    }
   }
   &__text1 {
     font-size: 20px;
     line-height: 150%;
     color: #0C1E42;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 135%;
+      color: #1A3788;
+    }
   }
 }

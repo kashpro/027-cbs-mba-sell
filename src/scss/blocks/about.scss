@@ -4,44 +4,110 @@
   padding-top: 300px;
   margin-bottom: 86px;
   padding-bottom: 133px;
+  @media (max-width: 991px) {
+    // padding-top: 350px;
+    padding-bottom: 82px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+	}
   &__container {
 
   }
   &__title {
     margin-bottom: 50px;
+    @media (max-width: 1365px) {
+      text-align: center;
+      margin-bottom: 37px;
+    }
   }
   &__list1 {
     display: flex;
     flex-wrap: wrap;
     // margin-bottom: 131px;
+    @media (max-width: 1365px) {
+      justify-content: space-between;
+    }
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
   }
   &__item1 {
     font-size: 0;
     background-image: url("../assets/images/logo_icons_sprite_01.png");
     flex: 0 0 190px;
     height: 72px;
+    @media (max-width: 767px) {
+      // transform: scale(0.6);
+      height: 43px;
+      flex: 0 0 114px;
+      // background-color: $temp1;
+      background-image: url("../assets/images/logo_icons_sprite_01_mob.png");
+      margin-left: 2px !important;
+      margin-right: 2px !important;
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+    }
     & + & {
       margin-left: 22px;
+      @media (max-width: 1365px) {
+        margin-left: 0;
+      }
+    }
+    &:not(:nth-child(3n)) {
+      @media (max-width: 1365px) {
+        margin-right: 100px;
+      }
+      @media (max-width: 991px) {
+        margin-right: 50px;
+      }
+      @media (max-width: 767px) {
+        margin-right: 0;
+      }
+    }
+    &:nth-child(-n+3) {
+      @media (max-width: 1365px) {
+        margin-bottom: 70px;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: 0;
+      }
     }
     &:nth-child(1) {
       background-position: -0px 0;
     }
     &:nth-child(2) {
       background-position: -190px 0;
+      @media (max-width: 767px) {
+        background-position: -114px 0;
+      }
     }
     &:nth-child(3) {
       background-position: -380px 0;
+      @media (max-width: 767px) {
+        background-position: -228px 0;
+      }
     }
     &:nth-child(4) {
       background-position: -570px 0;
+      @media (max-width: 767px) {
+        background-position: -342px 0;
+      }
     }
     &:nth-child(5) {
       background-position: -760px 0;
+      @media (max-width: 767px) {
+        background-position: -456px 0;
+      }
     }
     &:nth-child(6) {
       background-position: -950px 0;
+      @media (max-width: 767px) {
+        background-position: -570px 0;
+      }
     }
-    
   }
   // &__subtitle {
   //   margin-bottom: 65px;

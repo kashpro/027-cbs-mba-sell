@@ -1,5 +1,17 @@
 .video-how {
+  // background-color: $temp1;
   margin-bottom: 80px;
+  background-image: url("../assets/images/video_how_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (max-width: 991px) {
+		margin-bottom: 50px;
+  }
+  @media (max-width: 767px) {
+    background-size: 350px;
+    background-position: center 165px;
+    margin-top: -50px;
+	}
   &__container {
     display: flex;
     justify-content: center;
@@ -7,12 +19,15 @@
   &__video {
     width: 1023px;
     height: 737px;
-    background-image: url("../assets/images/video_how_bg.png");
+    // background-image: url("../assets/images/video_how_bg.png");
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+      height: 420px;
+    }
   }
   &__btn {
     margin-top: -100px;
@@ -25,6 +40,13 @@
     // border-radius: 50%;
     border: none;
     transition: all 0.2s ease;
+    @media (max-width: 767px) {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 84px;
+      height: 84px;
+      background-size: contain;
+    }
     &:hover {
       filter: brightness(1.5);
     }
@@ -37,5 +59,11 @@
     line-height: 50px;
     text-align: center;
     color: #FFFFFF;
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 26px;
+      color: #1A3788;
+      margin-bottom: 66px;
+    }
   }
 }

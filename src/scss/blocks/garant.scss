@@ -2,8 +2,14 @@
   background: #E64B52;
   transform: skewY(-3deg);
   padding: 120px 0;
+  @media (max-width: 991px) {
+    padding: 60px 0;
+  }
   &__container {
-
+    @media (max-width: 991px) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__title {
     transform: skewY(3deg);
@@ -12,5 +18,15 @@
     line-height: 50px;
     text-align: center;
     color: #FFFFFF;
+    @media (max-width: 991px) {
+      max-width: 583px;
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+      font-size: 24px;
+      line-height: 26px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }

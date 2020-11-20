@@ -5,23 +5,57 @@
   &__container {
     display: flex;
     align-items: center;
+    @media (max-width: 1500px) {
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+    @media (max-width: 1365px) {
+      max-width: 960px;
+    }
+    @media (max-width: 991px) {
+      max-width: 768px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
   &__logo {
     margin-left: 70px;
     margin-right: 24px;
     padding-right: 28px;
     border-right: 1px solid #ffffff;
+    @media (max-width: 1500px) {
+      margin-left: 30px;
+    }
+    @media (max-width: 991px) {
+      margin-left: 0;
+      margin-right: 25px;
+      display: flex;
+      align-items: center;
+    }
+    @media (max-width: 767px) {
+      width: 109px;
+      height: 49px;
+      padding-right: 19px;
+      margin-right: 17px;
+
+    }
   }
   &__box1 {
     display: flex;
     flex-direction: column;
     margin-right: 75px;
+    @media (max-width: 1500px) {
+      margin-right: 35px;
+    }
   }
   &__text1 {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     color: #FFFFFF;
+    @media (max-width: 991px) {
+      font-size: 14px;
+    }
   }
   &__text2 {
     font-weight: 500;
@@ -29,6 +63,12 @@
     line-height: 40px;
     color: #FFFFFF;
     margin-right: auto;
+    @media (max-width: 1500px) {
+      font-size: 22px;
+    }
+    @media (max-width: 1365px) {
+      display: none;
+    }
   }
   &__link {
     font-weight: 500;
@@ -36,6 +76,9 @@
     line-height: 150%;
     color: #FFFFFF;
     margin-right: 30px;
+    @media (max-width: 1365px) {
+      display: none;
+    }
     &:hover {
       text-decoration: underline;
       color: #dddddd;
@@ -45,5 +88,28 @@
     margin-right: auto;
     width: 270px;
     padding: 18px;
+    font-size: 18px;
+    @media (max-width: 1365px) {
+      display: none;
+    }
+  }
+  &__sandwich {
+    width: 34px;
+    height: 21px;
+    display: none;
+    margin-left: auto;
+    cursor: pointer;
+    @media (max-width: 1365px) {
+      display: block;
+    }
+    &:hover {
+      svg {
+        fill: #a62B32;
+      }
+    }
+    svg {
+      transition: all 0.2s ease;
+      fill: #ffffff;
+    }
   }
 }

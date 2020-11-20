@@ -1,6 +1,9 @@
 .gift {
   padding-top: 110px;
   margin-bottom: 100px;
+  @media (max-width: 767px) {
+		padding-top: 54px;
+	}
   &__container {
     display: flex;
     flex-direction: column;
@@ -10,35 +13,121 @@
     display: flex;
     border: 1px solid #0C1E42;
     margin-bottom: 60px;
+    @media (max-width: 1365px) {
+      flex-direction: column;
+      border: none;
+    }
+    @media (max-width: 991px) {
+      // flex-direction: column;
+      // border: none;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 0;
+    }
   }
   &__box2 {
     position: relative;
     background-color: #1A3788;
     padding: 60px;
-    max-width: 560px;
-    min-height: 486px;
+    max-width: 538px;
+    // min-height: 486px;
+    // @media (max-width: 1365px) {
+    //   max-width: none;
+    //   min-height: 0;
+    //   flex: 0 1 50%;
+    // }
+    @media (max-width: 1365px) {
+      padding: 62px 80px;
+      margin-bottom: 20px;
+      max-width: none;
+    }
+    @media (max-width: 767px) {
+      padding: 43px 53px 59px 21px;
+    }
+    // @media (max-width: 991px) {
+    //   padding: 62px 80px;
+    //   margin-bottom: 20px;
+    // }
     img {
       position: absolute;
-      bottom: 60px;
+      bottom: 50px;
       right: 60px;
+      @media (max-width: 991px) {
+        width: 59px;
+        height: 88px;
+      }
+      @media (max-width: 767px) {
+        bottom: 48px;
+        right: 53px;
+      }
     }
   }
   &__box3 {
-    padding: 50px 62px;
+    position: relative;
+    padding: 60px 240px 46px 54px;
+    // @media (max-width: 1365px) {
+    //   flex: 0 1 50%;
+    // }
+    @media (max-width: 1365px) {
+      border: 1px solid #0C1E42;
+      // padding: 31px 24px;
+    }
+    @media (max-width: 767px) {
+      padding: 43px 21px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    // @media (max-width: 991px) {
+    //   border: 1px solid #0C1E42;
+    //   padding: 31px 24px;
+    // }
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      bottom: 46px;
+      right: 46px;
+      width: 164px;
+      height: 164px;
+      background-image: url("../assets/images/gift_box_icon.svg");
+      background-size: contain;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
   }
   &__title {
     font-weight: bold;
     font-size: 40px;
     line-height: 48px;
     color: #FFFFFF;
+    @media (max-width: 991px) {
+      max-width: 498px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+    @media (max-width: 767px) {
+      max-width: 232px;
+      font-size: 24px;
+      line-height: 26px;
+    }
   }
   &__text {
     font-size: 24px;
     line-height: 135%;
     color: #0C1E42;
-    max-width: 606px;
-    & + & {
-      margin-top: 30px;
+    max-width: 488px;
+    margin-bottom: 30px;
+    // & + & {
+    //   margin-top: 30px;
+    // }
+    @media (max-width: 767px) {
+      max-width: none;
+      font-size: 20px;
     }
   }
   // &__btn {
@@ -78,5 +167,8 @@
     //   top: calc(50% - 2px);
     //   left: 70px;
     // }
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
   }
 }

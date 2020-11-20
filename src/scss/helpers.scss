@@ -7,7 +7,7 @@
 	margin: 0 auto;
 	max-width: 1320px;
 	border-top: 1px solid transparent;
-	@media (max-width: 1366px) {
+	@media (max-width: 1365px) {
 		max-width: 960px;
 	}
 	@media (max-width: 991px) {
@@ -16,13 +16,16 @@
 		padding-right: 15px;
 	}
 	@media (max-width: 767px) {
-		max-width: 540px;
-	}
-	@media (max-width: 575px) {
 		max-width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
+		// max-width: 540px;
 	}
+	// @media (max-width: 575px) {
+	// 	max-width: 100%;
+	// 	padding-left: 10px;
+	// 	padding-right: 10px;
+	// }
 }
 
 .hide {
@@ -49,9 +52,23 @@
 	background-image: url("../assets/images/decor_01.svg");
 	background-repeat: no-repeat;
 	background-position: center 0;
+	@media (max-width: 991px) {
+		background-position: center 253px;
+		background-size: contain;
+	}
+	
 }
 .decor2 {
 	background-image: url("../assets/images/decor_02.svg");
 	background-repeat: no-repeat;
 	padding-top: 119px;
+	@media (max-width: 991px) {
+		background-position: -123px 0px;
+		padding-top: 0;
+	}
+	@media (max-width: 767px) {
+		// background-image: none;
+		background-size: 150px;
+		background-position: -52px 150px;
+	}
 }

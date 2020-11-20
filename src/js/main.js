@@ -21,11 +21,13 @@ import slick from "slick-carousel";
 
   function programListClickHandler(e) {
     $programBox1All.forEach( (item) => {item.classList.remove("program__box1--active");} );
-    $programContentAll.forEach( (item) => {item.classList.add("fade");} );
+    // $programContentAll.forEach( (item) => {item.classList.add("fade");} );
+    $programContentAll.forEach( (item) => {item.classList.add("program__content--collapse");} );
     const $programBox1 = e.target.closest(".js-program-box1");
     if ($programBox1) {
       const $content = $programBox1.nextElementSibling;
-      if ($content) {$content.classList.remove("fade");}
+      if ($content) {$content.classList.remove("program__content--collapse");}
+      // if ($content) {$content.classList.remove("fade");}
       $programBox1.classList.add("program__box1--active");
     }
   }
@@ -117,8 +119,8 @@ import slick from "slick-carousel";
 		accessibility: false,
 		prevArrow: $(".js-result-prev"),
     nextArrow: $(".js-result-next"),
-	  autoplay: true,
-	  autoplaySpeed: 5000,
+	  // autoplay: true,
+	  // autoplaySpeed: 5000,
 	  infinite: true,
 	  speed: 500,
 	  pauseOnFocus: true,

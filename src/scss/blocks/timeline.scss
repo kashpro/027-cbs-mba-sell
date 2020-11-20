@@ -4,6 +4,17 @@
   padding-bottom: 220px;
   background-color: #E64B52;
   transform: skewY(-3deg);
+  @media (max-width: 1365px) {
+		padding-bottom: 0px;
+  }
+  @media (max-width: 991px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media (max-width: 767px) {
+		padding-top: 50px;
+    padding-bottom: 110px;
+	}
   &__container {
     transform: skewY(3deg);
     display: flex;
@@ -13,6 +24,19 @@
     background-repeat: no-repeat;
     background-position: 72px 130px;
     background-size: 86%;
+    @media (max-width: 1365px) {
+      background-image: url("../assets/images/timeline_bg_tab.svg");
+      background-position: 165px 130px;
+      background-size: 63%;
+    }
+    @media (max-width: 991px) {
+      background-position: 155px 130px;
+      background-size: 55%;
+    }
+    @media (max-width: 767px) {
+      background-position: 50% 151px;
+      background-size: 330px;
+    }
   }
   &__title {
     font-weight: bold;
@@ -22,11 +46,22 @@
     max-width: 638px;
     text-align: center;
     margin-bottom: 127px;
+    // @media (max-width: 1365px) {
+      // margin-bottom: 86px;
+    // }
+    @media (max-width: 991px) {
+      line-height: 50px;
+      // margin-bottom: 86px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 26px;
+      max-width: 274px;
+    }
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: space-between;
   }
   &__item {
@@ -36,6 +71,13 @@
     align-items: center;
     // background-color: $temp6;
     margin-bottom: 174px;
+    @media (max-width: 1365px) {
+      flex: 0 1 100%;
+      margin-bottom: 223px;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 86px;
+    }
   }
   &__num {
     filter: drop-shadow(0px 10px 10px rgba(27, 8, 8, 0.15));
@@ -43,11 +85,25 @@
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 36px;
+    @media (max-width: 991px) {
+      max-width: 768px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 120px;
+      margin-bottom: 0;
+    }
   }
   &__text {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
+    @media (max-width: 991px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    @media (max-width: 767px) {
+      max-width: 282px;
+    }
   }
 }

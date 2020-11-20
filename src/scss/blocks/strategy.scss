@@ -1,13 +1,30 @@
 .strategy {
   margin-bottom: 254px;
+  @media (max-width: 1365px) {
+    margin-bottom: 154px;
+  }
+  @media (max-width: 991px) {
+		margin-bottom: 50px;
+	}
   &__container {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1365px) {
+      flex-direction: column;
+    }
   }
   &__title {
     flex: 0 1 50%;
     max-width: 510px;
     // background-color: $temp1;
+    @media (max-width: 1365px) {
+      max-width: 700px;
+      margin-bottom: 38px;
+    }
+    @media (max-width: 767px) {
+      text-align: center;
+      margin-bottom: 33px;
+    }
   }
   &__box1 {
     flex: 0 1 50%;
@@ -18,8 +35,17 @@
     font-size: 30px;
     line-height: 135%;
     color: #1A3788;
+    @media (max-width: 1365px) {
+      max-width: 737px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
     & + & {
       margin-top: 30px;
+      @media (max-width: 767px) {
+        margin-top: 15px;
+      }
     }
   }
 }

@@ -1,8 +1,18 @@
 .diff {
   margin-bottom: 100px;
   $this: &;
+  @media (max-width: 767px) {
+		margin-bottom: 50px;
+	}
   &__container {
     display: flex;
+    @media (max-width: 1365px) {
+      flex-direction: column;
+    }
+    @media (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   &__title {
     // background-color: $temp1;
@@ -11,12 +21,25 @@
     font-size: 50px;
     line-height: 65px;
     color: #1A3788;
+    @media (max-width: 1365px) {
+      flex: 0 1 auto;
+      margin-bottom: 47px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 26px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
   &__list {
     // background-color: $temp2;
     flex: 0 1 872px;
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 1365px) {
+      flex: 0 1 auto;
+    }
   }
   &__item {
     padding-left: 50px;
@@ -24,12 +47,30 @@
     padding-top: 50px;
     padding-bottom: 50px;
     flex: 0 1 50%;
+    @media (max-width: 991px) {
+      flex: 0 1 100%;
+    }
+    @media (max-width: 767px) {
+      padding: 30px 20px;
+      height: 200px;
+    }
+    & + & {
+      @media (max-width: 991px) {
+        margin-top: 20px;
+      }
+      @media (max-width: 767px) {
+        margin-top: 0;
+      }
+    }
     &:nth-child(1) {
       background: #E64B52;
       // padding-right: 50px; //!!!
       // #{$this}__text { //!!!
       //   font-size: 30px;
       // }
+      @media (max-width: 991px) {
+        order: 1;
+      }
     }
     &:nth-child(2) {
       background: #EAF4FF;
@@ -38,6 +79,9 @@
       }
       #{$this}__text {
         color: #0C1E42;
+      }
+      @media (max-width: 991px) {
+        order: 3;
       }
     }
     &:nth-child(3) {
@@ -48,9 +92,15 @@
       #{$this}__text {
         color: #0C1E42;
       }
+      @media (max-width: 991px) {
+        order: 4;
+      }
     }
     &:nth-child(4) {
       background: #1759F7;
+      @media (max-width: 991px) {
+        order: 3;
+      }
     }
   }
   &__subtitle {
@@ -59,10 +109,22 @@
     line-height: 50px;
     color: #FFFFFF;
     margin-bottom: 22px;
+    @media (max-width: 767px) {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
   }
   &__text {
     font-size: 24px;
     line-height: 135%;
     color: #FFFFFF;
+    @media (max-width: 991px) {
+      font-size: 30px;
+      max-width: 623px;
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+      font-size: 16px;
+    }
   }
 }
