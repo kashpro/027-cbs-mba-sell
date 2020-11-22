@@ -9,7 +9,7 @@
   // height: 500px;
   background: linear-gradient(180deg, #0C1E42 0%, #113669 118.14%);
   @media (max-width: 1365px) {
-		padding-bottom: 135px;
+		padding-bottom: 185px;
   }
   @media (max-width: 991px) {
     padding-bottom: 200px;
@@ -232,6 +232,7 @@
       bottom: -70px;
     }
     @media (max-width: 991px) {
+      width: 345px;
       left: 11px;
       bottom: -70px;
     }

@@ -72,3 +72,10 @@
 		background-position: -52px 150px;
 	}
 }
+
+//fast fix
+@media (max-width:360px) {
+	body {
+		overflow-x: hidden;
+	}
+}

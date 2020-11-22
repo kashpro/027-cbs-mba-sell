@@ -197,16 +197,12 @@
         content: "";
         background: #E64B52;
         transform: rotate(12.8deg);
-        width: 216px;
-        height: 4px;
+        width: 84px;
+        height: 2px;
         top: 50%;
         left: -14px;
         @media (max-width: 767px) {
           left: 0;
-          width: 84px;
-          height: 2px;
-          // top: 50%;
-          
         }
       }
     }

@@ -39,7 +39,8 @@ import slick from "slick-carousel";
   const $gift = document.querySelector(".js-modal-gift");
   const $consult = document.querySelector(".js-modal-consult");
   const $plan = document.querySelector(".js-modal-plan");
-  const $components = [$gift, $consult, $plan];
+  const $discount = document.querySelector(".js-modal-discount");
+  const $components = [$gift, $consult, $plan, $discount];
 
   /* Init */
   const $modal = document.querySelector(".js-modal");
@@ -86,13 +87,16 @@ import slick from "slick-carousel";
   const $consultButtons = document.querySelectorAll(".js-btn-consult");
   $consultButtons.forEach( item => {item.addEventListener( "click", () => {openModal($consult);} );} );
 
-  const $giftButtons = document.querySelectorAll(".js-btn-gift");
-  $giftButtons.forEach( item => {item.addEventListener( "click", () => {openModal($gift);} );} );
+  // const $giftButtons = document.querySelectorAll(".js-btn-gift");
+  // $giftButtons.forEach( item => {item.addEventListener( "click", () => {openModal($gift);} );} );
+  
+  const $discountButtons = document.querySelectorAll(".js-btn-discount");
+  $discountButtons.forEach( item => {item.addEventListener( "click", () => {openModal($discount);} );} );
 
   const $planButtons = document.querySelectorAll(".js-btn-plan");
   $planButtons.forEach( item => {item.addEventListener( "click", () => {openModal($plan);} );} );
 
-  // openModal($plan); //на не десктопах открывать попап через задержку
+  openModal($discount); //на не десктопах открывать попап через задержку
 }}
 
 /* Show more speakers button */
