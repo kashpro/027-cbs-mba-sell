@@ -315,7 +315,7 @@
             <p class="gift__text">Апгрейд ваших представлений о современных продажах гарантирован!</p>
             <p class="gift__text">Это наша миссия!</p> -->
             <p class="gift__text">Запишитесь на курс <b>«MBA. ДИРЕКТОР ПО ПРОДАЖАМ»</b> и получите в подарок доступ к нашему легендарному продукту <b>«ЦЕЛЬ Х»</b> - авторская программа по постановке и достижению целей</p>
-            <button class="btn gift__btn">Записаться</button>
+            <button class="btn gift__btn js-btn-discount">Записаться</button>
           </div>
         </div>
         <!-- <button class="btn gift__btn js-btn-gift">Получить подарок</button> -->
@@ -504,7 +504,7 @@
         <h2 class="visually-hidden">Как все устроено</h2>
         <div class="container video-how__container">
           <div class="video-how__video">
-            <button class="video-how__btn">Play video</button>
+            <button class="video-how__btn js-video-btn" data-id='g-uF6uHgMYw'>Play video</button>
             <p class="video-how__text">Посмотрите как все устроено за 2 минуты</p>
           </div>
         </div>
@@ -672,7 +672,7 @@
           <li class="feedback__item1">
             <div class="feedback__image">
               <img src="./assets/images/feedback_01.jpg" alt="Пантелеймон Константинопольский">
-              <button class="feedback__btn">Play Video</button>
+              <button class="feedback__btn js-video-btn" data-id='RmyciZVNVJk'>Play Video</button>
             </div>
             <span class="feedback__name">Пантелеймон Константинопольский</span>
             <span class="feedback__role">Директор по продажам</span>
@@ -680,7 +680,7 @@
           <li class="feedback__item1">
             <div class="feedback__image">
               <img src="./assets/images/feedback_02.jpg" alt="Пантелеймон Константинопольский">
-              <button class="feedback__btn">Play Video</button>
+              <button class="feedback__btn js-video-btn" data-id='RmyciZVNVJk'>Play Video</button>
             </div>
             <span class="feedback__name">Пантелеймон Константинопольский</span>
             <span class="feedback__role">Бизнес-тренер</span>
@@ -957,13 +957,16 @@
     </section>
   </footer>
 
-  <div class="modal modal--sho js-modal">
+  <div class="modal js-modal">
     <div class="modal__content">
       <div class="modal__close js-modal-close"></div>
       <div class="modal__component js-modal-component"></div>
     </div>
   </div>
 
+  <div class="video video-show js-video">
+    <div id="yt-player" class="video__player"></div>
+  </div>
   <!-- <div class="modal-content js-modal-gift">
     <h3 class="modal-content__title">Забрать подарок</h3>
     <form class="modal-content__form">

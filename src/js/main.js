@@ -96,8 +96,73 @@ import slick from "slick-carousel";
   const $planButtons = document.querySelectorAll(".js-btn-plan");
   $planButtons.forEach( item => {item.addEventListener( "click", () => {openModal($plan);} );} );
 
-  openModal($discount); //на не десктопах открывать попап через задержку
+  // openModal($discount);
 }}
+
+/* youtube video */
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+window.player;
+
+const $video = document.querySelector(".js-video");
+//клик на тумане - уничтожить плеер
+$video.addEventListener("click", function(e) {
+ if (e.target == this) {
+    //уничтожить плеер
+    window.player.stopVideo();
+    window.player.destroy();
+    // window.player.clearVideo();
+    //закрыть модал
+    $video.classList.remove("video--show");
+ }
+});
+
+const $videoButtons = document.querySelectorAll(".js-video-btn");
+$videoButtons.forEach( item => {item.addEventListener( "click", (e) => {
+  $video.classList.add("video--show");
+  //слушатели esc
+  window.addEventListener("keyup", (e) => {
+    if (e.code === "Escape" || e.keyCode === 27) {
+      //уничтожить плеер
+      window.player.stopVideo();
+      window.player.destroy();
+      // window.player.clearVideo();
+      //закрыть модал
+      $video.classList.remove("video--show");
+    }
+  }); 
+   
+   
+
+  try {
+    window.player = new YT.Player("yt-player", {
+      videoId: e.target.dataset.id,
+      width: "960",
+      height: "540",
+      events: {
+        'onReady': e => window.player.playVideo(),
+      },
+  });
+  } catch (err) {
+    alert(err.message);
+  } 
+} );} );
+
+
+// function onYouTubeIframeAPIReady() {
+//   window.player2 = new YT.Player('player', {
+//     // height: '360',
+//     // width: '640',
+//     videoId: 'g-uF6uHgMYw',
+//     events: {
+//       'onReady': () => player2.playVideo(), 
+//       // 'onStateChange': onPlayerStateChange
+//     }
+//   });
+// }
 
 /* Show more speakers button */
 {{
