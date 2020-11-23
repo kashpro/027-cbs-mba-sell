@@ -132,16 +132,11 @@ import mediumZoom from 'medium-zoom';
   $videoButtons.forEach( item => {item.addEventListener( "click", (e) => {
     $video.classList.add("video--show");
     //слушатели esc
-    window.addEventListener("keyup", (e) => {
-      if (e.code === "Escape" || e.keyCode === 27) {
-        //уничтожить плеер
-        closeVideo();
-      }
-    });
+    window.addEventListener("keyup", closeVideoKeyboard);
     if (e.target.dataset.vimeoUrl) {
       window.vimeoPlayer = new Vimeo.Player('vm-player', {
         url: e.target.dataset.vimeoUrl,
-        width: 640,
+        // width: 640,
       });
       window.vimeoPlayer.play();
       return;
@@ -162,16 +157,29 @@ import mediumZoom from 'medium-zoom';
   } );} );
 
   function closeVideo() {
+    // console.log(window.player);
+    // console.log(window.vimeoPlayer);
     if (window.player) {
       window.player.stopVideo();
       window.player.destroy();
+      window.player = null;
     }
     if (window.vimeoPlayer) {
       window.vimeoPlayer.pause();
       window.vimeoPlayer.destroy();
+      window.vimeoPlayer = null;
     }
+    
+    window.removeEventListener("keyup", closeVideoKeyboard);
     //закрыть модал
     $video.classList.remove("video--show");
+  }
+
+  function closeVideoKeyboard(e) {
+    if (e.code === "Escape" || e.keyCode === 27) {
+      //уничтожить плеер
+      closeVideo();
+    }
   }
 }}
 
