@@ -70,9 +70,12 @@
       transform: translate(-50%, -50%) rotate(-45deg);
     }
     &:hover {
-      &::before, &::after {
-        background-color: #E64B52;
+      @media (min-width: 1280px) {
+        &::before, &::after {
+          background-color: #E64B52;
+        }
       }
+      
     }
   }
   &--show {

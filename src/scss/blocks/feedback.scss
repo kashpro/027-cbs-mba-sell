@@ -113,7 +113,10 @@
       background-size: contain;
     }
     &:hover {
-      filter: brightness(0.8);
+      @media (min-width: 1280px) {
+	      filter: brightness(0.8);
+      }
+      
     }
   }
   &__name {
@@ -178,9 +181,12 @@
       height: 48px;
     }
     &:hover {
-      svg {
-        fill: #dddddd;
+      @media (min-width: 1280px) {
+        svg {
+          fill: #dddddd;
+        }
       }
+      
     }
     svg {
       transition: all 0.2s ease;
@@ -204,8 +210,11 @@
     a {
       transition: all 0.2s ease;
       &:hover {
-        transform: scale(1.05);
-        opacity: 0.9;
+        @media (min-width: 1280px) {
+          transform: scale(1.05);
+          opacity: 0.9;
+        }
+        
       }
     }
     @media (max-width: 1365px) {
@@ -231,7 +240,9 @@
       margin-bottom: 5px;
     }
     &:hover {
-      text-decoration: underline;
+      @media (min-width: 1280px) {
+	      text-decoration: underline;
+      }
     }
     &::before {
       content: "";

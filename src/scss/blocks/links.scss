@@ -53,8 +53,11 @@
     transition: all 0.2s ease;
     color: rgba(#FFFFFF, 0.4);
     &:hover {
-      color: rgba(#FFFFFF, 1);
-      text-decoration: underline;
+      @media (min-width: 1280px) {
+        color: rgba(#FFFFFF, 1);
+        text-decoration: underline;
+      }
+      
     }
   }
 }

@@ -37,9 +37,12 @@
       // transition: all 0.2s ease;
     }
     &:hover, &:active {
-      &::placeholder {
-        color: rgba(#FFFFFF, 1);
+      @media (min-width: 1280px) {
+        &::placeholder {
+          color: rgba(#FFFFFF, 1);
+        }
       }
+      
     }
   }
   &__btn {
@@ -55,7 +58,10 @@
       width: 400px;
     }
     &:hover {
-      background: #dddddd;
+      @media (min-width: 1280px) {
+	      background: #dddddd;
+      }
+      
     }
 //     font-size: 20px;
 // line-height: 150%;

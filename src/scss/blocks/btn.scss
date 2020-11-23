@@ -107,17 +107,26 @@
 
 .btn:hover,
 .btn:active {
-  transform: translateY(-3px);
-  // color: #fff;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+  @media (min-width: 1280px) {
+    transform: translateY(-3px);
+    // color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+  }
+  
 }
 
 .btn:hover::before {
-  left: 120%;
-  opacity: 0.5s;
+  @media (min-width: 1280px) {
+    left: 120%;
+    opacity: 0.5s;
+  }
+  
 }
 
 .btn:hover::after {
-  left: 200%;
-  opacity: 0.6;
+  @media (min-width: 1280px) {
+	  left: 200%;
+    opacity: 0.6;
+  }
+  
 }

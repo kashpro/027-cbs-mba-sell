@@ -58,12 +58,15 @@
       margin-bottom: 20px;
     }
     &:hover {
-      #{$this}__module {
-        opacity: 1;
+      @media (min-width: 1280px) {
+        #{$this}__module {
+          opacity: 1;
+        }
+        #{$this}__name {
+          opacity: 1;
+        }
       }
-      #{$this}__name {
-        opacity: 1;
-      }
+      
     }
     &--active {
       // border: 2px solid #FFFFFF;

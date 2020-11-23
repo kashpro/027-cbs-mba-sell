@@ -83,10 +83,13 @@
     border-radius: 50%;
     cursor: pointer;
     &:hover {
-      background-color: #E64B52;
-      svg {
-        fill: #ffffff;
+      @media (min-width: 1280px) {
+        background-color: #E64B52;
+        svg {
+          fill: #ffffff;
+        }
       }
+      
     }
     svg {
       width: 26px;

@@ -80,8 +80,10 @@
       display: none;
     }
     &:hover {
-      text-decoration: underline;
-      color: #dddddd;
+      @media (min-width: 1280px) {
+	      text-decoration: underline;
+        color: #dddddd;
+      }
     }
   }
   &__btn {
@@ -103,8 +105,10 @@
       display: block;
     }
     &:hover {
-      svg {
-        fill: #a62B32;
+      @media (min-width: 1280px) {
+        svg {
+          fill: #a62B32;
+        }
       }
     }
     svg {

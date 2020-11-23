@@ -73,9 +73,12 @@
       color: rgba(#1A3788, 0.7);
     }
     &:hover {
-      &::placeholder {
-        color: rgba(#1A3788, 1);
+      @media (min-width: 1280px) {
+        &::placeholder {
+          color: rgba(#1A3788, 1);
+        }
       }
+      
     }
     // & + & {
     //   margin-top: 38px;
@@ -107,7 +110,10 @@
       line-height: 16px;
     }
     &:hover {
-      color: #E64B52;
+      @media (min-width: 1280px) {
+	      color: #E64B52;
+      }
+      
     }
   }
   &__link {
@@ -121,7 +127,10 @@
       line-height: 16px;
     }
     &:hover {
-      color: #E64B52;
+      @media (min-width: 1280px) {
+	      color: #E64B52;
+      }
+      
     }
   }
   &__btn {

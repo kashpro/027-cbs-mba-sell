@@ -48,8 +48,10 @@
       color: rgba(#1A3788, 0.7);
     }
     &:hover {
-      &::placeholder {
-        color: rgba(#1A3788, 1);
+      @media (min-width: 1280px) {
+        &::placeholder {
+          color: rgba(#1A3788, 1);
+        }
       }
     }
     // & + & {
@@ -74,7 +76,9 @@
     cursor: pointer;
     transition: all 0.2s ease;
     &:hover {
-      color: #E64B52;
+      @media (min-width: 1280px) {
+	      color: #E64B52;
+      }
     }
   }
   &__link {
@@ -84,7 +88,9 @@
     color: #1A3788;
     text-decoration: underline;
     &:hover {
-      color: #E64B52;
+      @media (min-width: 1280px) {
+	      color: #E64B52;
+      }
     }
   }
   &__btn {
