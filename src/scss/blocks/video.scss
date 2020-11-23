@@ -61,4 +61,10 @@
     max-height: 80vh;
 
   }
+  #vm-player {
+    width: 95vw;
+    iframe {
+      width: 100%;
+    }
+  }
 }

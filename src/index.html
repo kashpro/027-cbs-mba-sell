@@ -14,6 +14,7 @@
   <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://player.vimeo.com/api/player.js"></script>
 
   <!-- <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sitename">
@@ -486,7 +487,8 @@
         <h2 class="visually-hidden">Как все устроено</h2>
         <div class="container video-how__container">
           <div class="video-how__video">
-            <button class="video-how__btn js-video-btn" data-id='8mhYReoYgiQ'>Play video</button>
+            <!-- <button class="video-how__btn js-video-btn" data-id='8mhYReoYgiQ'>Play video</button> -->
+            <button class="video-how__btn js-video-btn" data-vimeo-url="https://player.vimeo.com/video/358751794">Play video</button>
             <p class="video-how__text">Посмотрите как все устроено за 2 минуты</p>
           </div>
         </div>
@@ -949,6 +951,7 @@
   <div class="video video-show js-video">
     <div class="video__close js-video-close"></div>
     <div id="yt-player" class="video__player"></div>
+    <div id="vm-player" class="video__player"></div>
   </div>
   <!-- <div class="modal-content js-modal-gift">
     <h3 class="modal-content__title">Забрать подарок</h3>

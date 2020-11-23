@@ -112,7 +112,8 @@ import mediumZoom from 'medium-zoom';
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  window.player;
+  // window.player;
+  // window.vimeoPlayer;
 
   const $video = document.querySelector(".js-video");
   //клик на тумане - уничтожить плеер
@@ -136,7 +137,16 @@ import mediumZoom from 'medium-zoom';
         //уничтожить плеер
         closeVideo();
       }
-    }); 
+    });
+    if (e.target.dataset.vimeoUrl) {
+      window.vimeoPlayer = new Vimeo.Player('vm-player', {
+        url: e.target.dataset.vimeoUrl,
+        width: 640,
+      });
+      window.vimeoPlayer.play();
+      return;
+    }
+    
     try {
       window.player = new YT.Player("yt-player", {
         videoId: e.target.dataset.id,
@@ -152,8 +162,14 @@ import mediumZoom from 'medium-zoom';
   } );} );
 
   function closeVideo() {
-    window.player.stopVideo();
-    window.player.destroy();
+    if (window.player) {
+      window.player.stopVideo();
+      window.player.destroy();
+    }
+    if (window.vimeoPlayer) {
+      window.vimeoPlayer.pause();
+      window.vimeoPlayer.destroy();
+    }
     //закрыть модал
     $video.classList.remove("video--show");
   }
