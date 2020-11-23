@@ -40,7 +40,8 @@ import slick from "slick-carousel";
   const $consult = document.querySelector(".js-modal-consult");
   const $plan = document.querySelector(".js-modal-plan");
   const $discount = document.querySelector(".js-modal-discount");
-  const $components = [$gift, $consult, $plan, $discount];
+  const $start = document.querySelector(".js-modal-start");
+  const $components = [$gift, $consult, $plan, $discount, $start];
 
   /* Init */
   const $modal = document.querySelector(".js-modal");
@@ -96,6 +97,9 @@ import slick from "slick-carousel";
   const $planButtons = document.querySelectorAll(".js-btn-plan");
   $planButtons.forEach( item => {item.addEventListener( "click", () => {openModal($plan);} );} );
 
+  const $startButtons = document.querySelectorAll(".js-btn-start");
+  $startButtons.forEach( item => {item.addEventListener( "click", () => {openModal($start);} );} );
+
   // openModal($discount);
 }}
 
@@ -140,8 +144,8 @@ $videoButtons.forEach( item => {item.addEventListener( "click", (e) => {
   try {
     window.player = new YT.Player("yt-player", {
       videoId: e.target.dataset.id,
-      width: "960",
-      height: "540",
+      // width: "960",
+      // height: "540",
       events: {
         'onReady': e => window.player.playVideo(),
       },

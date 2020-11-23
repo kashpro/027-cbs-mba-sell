@@ -38,7 +38,8 @@
       <span class="header__text2">Старт ПЕРВОГО ПОТОКА 8 декабря!</span>
       <a href="tel:84951264084" class="header__link">8 (495) 126-40-84</a>
       <button class="btn header__btn js-btn-consult">Получить консультацию</button>
-      <div class="header__sandwich">
+      <!-- <button class="butn header__btn js-btn-consult">Получить консультацию</button> -->
+      <div class="header__sandwich js-btn-start">
         <svg width="34" height="21" viewBox="0 0 34 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="34" height="3"/>
           <rect y="9" width="34" height="3"/>
@@ -338,7 +339,7 @@
             </div>
             <div class="program__content program__content--collapse js-program-content">
               <h2 class="program__subtitle">Что внутри и кто ведет</h2>
-              <div class="program__speaker">
+              <!-- <div class="program__speaker">
                 <div class="program__image">
                   <img src="./assets/images/speakers_04.jpg" alt="Пантелеймон Константинопольский">
                 </div>
@@ -346,7 +347,7 @@
                   <span class="program__fio">Пантелеймон Константинопольский</span>
                   <span class="program__role">бизнес-тренер</span>
                 </div>
-              </div>
+              </div> -->
               <p class="program__text">Тема 1. Как определить цели оценки</p>
               <p class="program__text">Тема 2. Как организовать оценку персонала. Система оценки персонала</p>
               <p class="program__text">Тема 3. Как организовать оценку персонала. Инструменты оценки</p>
@@ -486,11 +487,12 @@
             </div>
           </li>
         </ul>
-        
-        
       </div>
       <div class="program__decor">
-        <button class="btn program__btn js-btn-plan">Запросить подробную программу</button>
+        <div class="program__box3">
+          <button class="btn program__btn js-btn-plan">Запросить подробную программу</button>
+        </div>
+        
       </div>
     </section>
     <div class="decor2">
@@ -504,7 +506,7 @@
         <h2 class="visually-hidden">Как все устроено</h2>
         <div class="container video-how__container">
           <div class="video-how__video">
-            <button class="video-how__btn js-video-btn" data-id='g-uF6uHgMYw'>Play video</button>
+            <button class="video-how__btn js-video-btn" data-id='8mhYReoYgiQ'>Play video</button>
             <p class="video-how__text">Посмотрите как все устроено за 2 минуты</p>
           </div>
         </div>
@@ -519,7 +521,7 @@
     <section class="demo">
       <div class="container demo__container">
         <h2 class="demo__title">Лучшие студенты по итогу курса будут иметь возможность получить групповую или личную консультацию</h2>
-        <button class="btn demo__btn">Записаться</button>
+        <button class="btn demo__btn js-btn-discount">Записаться</button>
       </div>
     </section>
     <section class="when">
@@ -688,16 +690,16 @@
         </ul>
         <div class="feedback__box1">
           <ul class="feedback__list2 js-feedback-slider">
-            <!-- <li class="feedback__item2">
+            <li class="feedback__item2">
               <div class="feedback__box2">
                 <img src="./assets/images/feedback_text_01.jpg" alt="Отзыв">
               </div>
-            </li> -->
-            <!-- <li class="feedback__item2">
+            </li>
+            <li class="feedback__item2">
               <div class="feedback__box2">
                 <img src="./assets/images/feedback_text_02.jpg" alt="Отзыв">
               </div>
-            </li> -->
+            </li>
             <li class="feedback__item2">
               <div class="feedback__box2">
                 <a href="https://fb.com/mitetereva" target="blank">
@@ -827,7 +829,7 @@
             <span class="cost__text5">Супер СКИДКА в период предпродажи</span>
             <p class="cost__text6">Успейте записаться на первый поток курса, который стартует <span>8 декабря 2020</span> года по самой низкой цене!</p>
             <p class="cost__text6">ПЕРВЫЙ ПОТОК будет самым насыщенным и самым мощным – внимание будет оказано каждому студенту персонально!</p>
-            <button class="btn cost__btn">Хочу поступить</button>
+            <button class="btn cost__btn js-btn-discount">Хочу поступить</button>
           </div>
         </div>
       </div>
@@ -899,7 +901,7 @@
           <h2 class="action__title">Оставьте заявку</h2>
         </div>
         <div class="action__box1">
-          <div class="action__form">
+          <form class="action__form">
             <input type="text" inputmode="text" class="action__input" placeholder="Имя">
             <input type="text" inputmode="email" class="action__input" placeholder="Email">
             <input type="text" inputmode="phone" class="action__input" placeholder="Телефон">
@@ -907,9 +909,9 @@
               <input type="checkbox" id="agree" class="action__checkbox">
               <label for="agree" class="action__label">Нажимая на кнопку "Получить консультацию", вы принимаете условия <a href="#" class="action__link">политики конфиденциальности</a></label>
             </div>
-            <button class="btn action__btn js-btn-consult">Получить консультацию</button>
+            <button class="btn action__btn">Получить консультацию</button>
             <p class="action__text4">Специалист приемной комиссии City Business School свяжется с Вами в ближайшее время</p>
-          </div>
+          </form>
         </div>
         <div class="action__box2">
           <p class="action__text1">Запишитесь на курс <b>«MBA. ДИРЕКТОР ПО ПРОДАЖАМ»</b> и получите в подарок доступ к нашему легендарному продукту <b>«ЦЕЛЬ Х»</b> - авторская программа по постановке и достижению целей</span>
@@ -1034,8 +1036,14 @@
     </form>
   </div>
 
+  <div class="modal-start js-modal-start">
+    <h3 class="modal-start__title">Старт ПЕРВОГО ПОТОКА 8 декабря!</h3>
+    <button class="btn modal-start__btn">Присоединиться</button>
+    <a href="tel:84951264084" class="modal-start__link">8 (495) 126-40-84</a>
+  </div>
+
   <script>
-    const mode = "dev";
+    const mode = "prod";
     const cfg = {
       showStats: mode === "dev",
       countdownTargetDate: new Date("2021-01-01T00:00:00+08:00"),
