@@ -143,6 +143,8 @@
   }
   &__list {
     margin-bottom: 99px;
+    list-style: disc;
+    margin-left: 23px;
     @media (max-width: 991px) {
       margin-bottom: 50px;
     }

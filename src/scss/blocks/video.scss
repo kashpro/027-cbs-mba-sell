@@ -22,6 +22,40 @@
     //   transform: translateY(0);
     // }
   }
+  &__close {
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    &:before, &::after {
+      // transition: all 0.1s ease;
+      position: absolute;
+      display: block;
+      content: "";
+      width: 32px;
+      height: 4px;
+      background-color: #ffffff;
+      border-radius: 2px;
+      left: 50%;
+      top: 50%;
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    &:hover {
+      @media (min-width: 1280px) {
+        &::before, &::after {
+          background-color: #E64B52;
+        }
+      }
+      
+    }
+  }
   #yt-player {
     max-width: 95vw;
     max-height: 80vh;

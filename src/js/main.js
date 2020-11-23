@@ -8,6 +8,8 @@ import "@/scss/main.scss";
 import $ from "jquery";
 import slick from "slick-carousel";
 
+import mediumZoom from 'medium-zoom';
+
 /* Program tabs */
 {{
   const $programList = document.querySelector(".js-program-list");
@@ -104,56 +106,58 @@ import slick from "slick-carousel";
 }}
 
 /* youtube video */
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+{{
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-window.player;
+  window.player;
 
-const $video = document.querySelector(".js-video");
-//клик на тумане - уничтожить плеер
-$video.addEventListener("click", function(e) {
- if (e.target == this) {
-    //уничтожить плеер
+  const $video = document.querySelector(".js-video");
+  //клик на тумане - уничтожить плеер
+  $video.addEventListener("click", function(e) {
+  if (e.target == this) {
+      closeVideo();
+  }
+  });
+
+  const $videoClose = document.querySelector(".js-video-close");
+  $videoClose.addEventListener("click", (e) => {
+    closeVideo();
+  });
+
+  const $videoButtons = document.querySelectorAll(".js-video-btn");
+  $videoButtons.forEach( item => {item.addEventListener( "click", (e) => {
+    $video.classList.add("video--show");
+    //слушатели esc
+    window.addEventListener("keyup", (e) => {
+      if (e.code === "Escape" || e.keyCode === 27) {
+        //уничтожить плеер
+        closeVideo();
+      }
+    }); 
+    try {
+      window.player = new YT.Player("yt-player", {
+        videoId: e.target.dataset.id,
+        // width: "960",
+        // height: "540",
+        events: {
+          'onReady': e => window.player.playVideo(),
+        },
+    });
+    } catch (err) {
+      alert(err.message);
+    } 
+  } );} );
+
+  function closeVideo() {
     window.player.stopVideo();
     window.player.destroy();
-    // window.player.clearVideo();
     //закрыть модал
     $video.classList.remove("video--show");
- }
-});
-
-const $videoButtons = document.querySelectorAll(".js-video-btn");
-$videoButtons.forEach( item => {item.addEventListener( "click", (e) => {
-  $video.classList.add("video--show");
-  //слушатели esc
-  window.addEventListener("keyup", (e) => {
-    if (e.code === "Escape" || e.keyCode === 27) {
-      //уничтожить плеер
-      window.player.stopVideo();
-      window.player.destroy();
-      // window.player.clearVideo();
-      //закрыть модал
-      $video.classList.remove("video--show");
-    }
-  }); 
-   
-   
-
-  try {
-    window.player = new YT.Player("yt-player", {
-      videoId: e.target.dataset.id,
-      // width: "960",
-      // height: "540",
-      events: {
-        'onReady': e => window.player.playVideo(),
-      },
-  });
-  } catch (err) {
-    alert(err.message);
-  } 
-} );} );
+  }
+}}
 
 
 // function onYouTubeIframeAPIReady() {
@@ -323,4 +327,13 @@ $videoButtons.forEach( item => {item.addEventListener( "click", (e) => {
     if (n1 == 1) { return textForms[0]; }
     return textForms[2];
   }
+}}
+
+
+/* Diploms zoom */
+/* https://www.npmjs.com/package/medium-zoom */
+{{
+  mediumZoom('.cert__image img', {
+    // background: "#000000",
+  });
 }}
