@@ -3,6 +3,7 @@
   background-image: url("../assets/images/cashback_bg.svg");
   background-repeat: no-repeat;
   background-position: calc(50% + 300px) 0;
+  background-size: contain;
   margin-bottom: 123px;
   @media (max-width: 991px) {
     background-image: url("../assets/images/cashback_bg_tab.svg");
@@ -29,30 +30,46 @@
   }
   &__image {
     flex: 0 0 auto;
-    margin-right: -60px;
-    width: 514px;
-    height: 313px;
+    // margin-right: -60px;
+    // width: 514px;
+    // height: 313px;
+    height: 223px;
+    width: 223px;
       // content: "";
       // display: block;
-      position: relative;
-    background-image: url("../assets/images/cashback.png");
-    left: -100px;
+    position: relative;
+    background-image: url("../assets/images/cashback_02.png");
+    background-size: contain;
+    margin-right: 53px;
+    // left: -100px;
     @media (max-width: 1365px) {
-      background-size: contain;
+      
       background-repeat: no-repeat;
-      width: 350px;
-      height: 217px;
-      left: 0;
-      margin-right: 25px;
+      // width: 350px;
+      // height: 217px;
+      // left: 0;
+      margin-right: 86px;
     }
     @media (max-width: 991px) {
-      width: 304px;
-      height: 185px;
-      margin-bottom: 41px;
+      // width: 304px;
+      // height: 185px;
+      width: 274px;
+      height: 274px;
+      // margin-bottom: 41px;
       margin-right: 0;
     }
+    @media (max-width: 991px) {
+      // width: 304px;
+      // height: 185px;
+      width: 252px;
+      height: 252px;
+      // margin-bottom: 41px;
+      // margin-right: 0;
+    }
+
   }
   &__text {
+    max-width: 993px;
     // display: flex;
     font-size: 40px;
     line-height: 50px;

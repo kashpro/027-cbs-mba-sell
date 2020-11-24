@@ -64,10 +64,11 @@
     & + & {
       margin-left: 133px;
       @media (max-width: 991px) {
-        margin-left: 0;
+        margin-left: 30px;
       }
       @media (max-width: 767px) {
         margin-top: 30px;
+        margin-left: 0;
       }
     }
   }

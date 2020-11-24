@@ -202,6 +202,10 @@ import mediumZoom from 'medium-zoom';
   const $speakersBox = document.querySelector(".js-speakers-box");
   const $speakersList = document.querySelector(".js-speakers-list");
   $speakersButton.addEventListener("click", speakersButtonClickHandler, false);
+  const $secondarySpeakers = document.querySelectorAll(".js-speakers-item");
+  if (!$secondarySpeakers.length) {
+    $speakersButton.classList.add("hide");
+  }
   
   function speakersButtonClickHandler(e) {
     $speakersButton.classList.add("hide");

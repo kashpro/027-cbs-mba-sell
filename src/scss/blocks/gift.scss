@@ -88,10 +88,14 @@
       content: "";
       display: block;
       bottom: 46px;
-      right: 46px;
-      width: 164px;
-      height: 164px;
-      background-image: url("../assets/images/gift_box_icon.svg");
+      // right: 46px;
+      // width: 164px;
+      // height: 164px;
+      right: 69px;
+      width: 139px;
+      height: 189px;
+      background-image: url("../assets/images/gift_box_icon.png");
+      background-repeat: no-repeat;
       background-size: contain;
       @media (max-width: 767px) {
         display: none;
