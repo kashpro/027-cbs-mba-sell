@@ -237,8 +237,9 @@
       bottom: -70px;
     }
     @media (max-width: 991px) {
-      width: 345px;
-      left: 11px;
+      transform: skewY(3deg) translateX(-50%);
+      width: 320px;
+      left: 50%;
       bottom: -70px;
     }
   }

@@ -31,7 +31,8 @@
     padding: 18px;
     width: 365px;
     @media (max-width: 767px) {
-      width: 340px;
+      width: 100%;
+      max-width: 340px;
     }
   }
 }

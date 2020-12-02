@@ -1,4 +1,4 @@
-.cert {
+.diplom {
   $this: &;
   padding-top: 148px;
   padding-bottom: 400px;
@@ -189,9 +189,16 @@
     }
   }
   &__image {
+    cursor: pointer;
     line-height: 0;
     margin-top: 52px;
     width: 476px;
+    transition: all 0.2s ease;
+    &:hover {
+      @media (min-width: 1280px) {
+        filter: contrast(1.2);
+      }
+    }
     @media (max-width: 1365px) {
       width: 380px;
     }
@@ -200,7 +207,8 @@
       width: 458px;
     }
     @media (max-width: 767px) {
-      width: 342px;
+      width: 100%;
+      max-width: 342px;
       margin-top: 22px;
     }
     img {

@@ -82,6 +82,7 @@
       margin-bottom: 123px;
     }
     @media (max-width: 991px) {
+      width: 100%;
       max-width: 335px;
     }
   }
@@ -222,6 +223,10 @@
     padding: 18px;
     // align-self: center;
     margin-bottom: 31px;
+    @media (max-width: 767px) {
+      width: 100%;
+      max-width: 335px;
+    }
   }
   &__text1 {
     // font-size: 24px;

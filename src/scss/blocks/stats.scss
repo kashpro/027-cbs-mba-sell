@@ -40,7 +40,8 @@
     }
     @media (max-width: 767px) {
       flex: 0 1 auto;
-      width: 360px;
+      width: 100%;
+      max-width: 360px;
     }
     & + & {
       border-left: 1px solid #C9E2FF;

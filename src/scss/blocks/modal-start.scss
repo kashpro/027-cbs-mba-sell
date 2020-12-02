@@ -1,7 +1,47 @@
 .modal-start {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #1A3788;
+  display: none;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 66px 32px 32px 32px;
+    border-radius: 20px;
+    background-color: #ffffff;
+  }
+  &__close {
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    &:before, &::after {
+      // transition: all 0.1s ease;
+      position: absolute;
+      display: block;
+      content: "";
+      width: 32px;
+      height: 4px;
+      background-color: #1A3788;
+      border-radius: 2px;
+      left: 50%;
+      top: 50%;
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    &:hover {
+      @media (min-width: 1280px) {
+        &::before, &::after {
+          background-color: #E64B52;
+        }
+      }
+    }
+  }
   &__title {
     font-size: 24px;
     line-height: 28px;
@@ -16,21 +56,31 @@
     margin-bottom: 28px;
   }
   &__link {
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
     color: #1A3788;
     position: relative;
-    padding-left: 25px;
+    padding-left: 45px;
+    transition: all 0.2s ease;
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
+    &:hover {
+      @media (min-width: 1280px) {
+        color: #E64B52;
+      }
+    }
     &::before {
       content: "";
       position: absolute;
       display: block;
-      background-image: url("../assets/images/phone_icon.svg");
+      background-image: url("../assets/images/phone_icon_01.svg");
       background-repeat: no-repeat;
-      width: 19px;
-      height: 28px;
+      width: 27px;
+      height: 32px;
       left: 0;
+      top: -4px;
     }
   }
 }

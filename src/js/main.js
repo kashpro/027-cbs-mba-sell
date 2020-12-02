@@ -1,15 +1,15 @@
 /* Development stats */
 import Development from './development.js';
-if (typeof cfg != "undefined" && cfg.showStats === true) {Development.addWindowStatsElement();}
+if (process.env.NODE_ENV === "development") {Development.addWindowStatsElement();}
 
 /* App styles */
 import "@/scss/main.scss";
 
 import $ from "jquery";
-const jQuery = $;
+window.jQuery = $;
 import slick from "slick-carousel";
-
-import mediumZoom from 'medium-zoom';
+require("@fancyapps/fancybox"); 
+// import mediumZoom from 'medium-zoom';
 
 /* Program tabs */
 {{
@@ -36,181 +36,35 @@ import mediumZoom from 'medium-zoom';
   }
 }}
 
-/* Modals */
 {{
-  /* Modal components*/
-  const $gift = document.querySelector(".js-modal-gift");
-  const $consult = document.querySelector(".js-modal-consult");
-  const $plan = document.querySelector(".js-modal-plan");
-  const $discount = document.querySelector(".js-modal-discount");
-  const $start = document.querySelector(".js-modal-start");
-  const $components = [$gift, $consult, $plan, $discount, $start];
-
-  /* Init */
-  const $modal = document.querySelector(".js-modal");
-  const $modalClose = document.querySelector(".js-modal-close");
-  const $modalComponent = document.querySelector(".js-modal-component");
-  $components.forEach( item => {
-    if (item) {
-      item.classList.add("hide");
-      $modalComponent.append(item);
-    }
-  } );
-
-  $modal.addEventListener("click", closeModalSelf);
-  $modalClose.addEventListener("click", closeModal);
-
-  /* Functions */
-  function openModal($component) {
-    $components.forEach( item => {
-      if (item) {
-        item.classList.add("hide");
-      }
-    } );
-    $component.classList.remove("hide");
-    $modal.classList.add("modal--show");
-    window.addEventListener("keyup", closeModalKeyboard); 
-  }
-
-  function closeModal() {
-    $modal.classList.remove("modal--show");
-    window.removeEventListener("keyup", closeModalKeyboard); 
-  }
+  let isOpened = false;
+  let yOffset = null;
+  const $speakersButton = $(".js-speakers-btn");
+  // const $speakersBox = $(".js-speakers-box");
+  const $speakersFirstList = $(".js-speakers-first-list");
+  const $speakersSecondList = $(".js-speakers-second-list");
+  $speakersButton.on("click", speakersButtonClickHandler);
   
-  function closeModalSelf(e) {
-    if (e.target == this) {closeModal();}
-  }
-
-  function closeModalKeyboard(e) {
-    if (e.code === "Escape" || e.keyCode === 27) {
-      closeModal();
-    }
-  }
-
-  /* Buttons actions */
-  const $consultButtons = document.querySelectorAll(".js-btn-consult");
-  $consultButtons.forEach( item => {item.addEventListener( "click", () => {openModal($consult);} );} );
-
-  // const $giftButtons = document.querySelectorAll(".js-btn-gift");
-  // $giftButtons.forEach( item => {item.addEventListener( "click", () => {openModal($gift);} );} );
-  
-  const $discountButtons = document.querySelectorAll(".js-btn-discount");
-  $discountButtons.forEach( item => {item.addEventListener( "click", () => {openModal($discount);} );} );
-
-  const $planButtons = document.querySelectorAll(".js-btn-plan");
-  $planButtons.forEach( item => {item.addEventListener( "click", () => {openModal($plan);} );} );
-
-  const $startButtons = document.querySelectorAll(".js-btn-start");
-  $startButtons.forEach( item => {item.addEventListener( "click", () => {openModal($start);} );} );
-
-  // openModal($discount);
-}}
-
-/* youtube video */
-{{
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  // window.player;
-  // window.vimeoPlayer;
-
-  const $video = document.querySelector(".js-video");
-  //клик на тумане - уничтожить плеер
-  $video.addEventListener("click", function(e) {
-  if (e.target == this) {
-      closeVideo();
-  }
-  });
-
-  const $videoClose = document.querySelector(".js-video-close");
-  $videoClose.addEventListener("click", (e) => {
-    closeVideo();
-  });
-
-  const $videoButtons = document.querySelectorAll(".js-video-btn");
-  $videoButtons.forEach( item => {item.addEventListener( "click", (e) => {
-    $video.classList.add("video--show");
-    //слушатели esc
-    window.addEventListener("keyup", closeVideoKeyboard);
-    if (e.target.dataset.vimeoUrl) {
-      window.vimeoPlayer = new Vimeo.Player('vm-player', {
-        url: e.target.dataset.vimeoUrl,
-        // width: 640,
-      });
-      window.vimeoPlayer.play();
-      return;
-    }
-    
-    try {
-      window.player = new YT.Player("yt-player", {
-        videoId: e.target.dataset.id,
-        // width: "960",
-        // height: "540",
-        events: {
-          'onReady': e => window.player.playVideo(),
-        },
-    });
-    } catch (err) {
-      alert(err.message);
-    } 
-  } );} );
-
-  function closeVideo() {
-    // console.log(window.player);
-    // console.log(window.vimeoPlayer);
-    if (window.player) {
-      window.player.stopVideo();
-      window.player.destroy();
-      window.player = null;
-    }
-    if (window.vimeoPlayer) {
-      window.vimeoPlayer.pause();
-      window.vimeoPlayer.destroy();
-      window.vimeoPlayer = null;
-    }
-    
-    window.removeEventListener("keyup", closeVideoKeyboard);
-    //закрыть модал
-    $video.classList.remove("video--show");
-  }
-
-  function closeVideoKeyboard(e) {
-    if (e.code === "Escape" || e.keyCode === 27) {
-      //уничтожить плеер
-      closeVideo();
-    }
-  }
-}}
-
-
-// function onYouTubeIframeAPIReady() {
-//   window.player2 = new YT.Player('player', {
-//     // height: '360',
-//     // width: '640',
-//     videoId: 'g-uF6uHgMYw',
-//     events: {
-//       'onReady': () => player2.playVideo(), 
-//       // 'onStateChange': onPlayerStateChange
-//     }
-//   });
-// }
-
-/* Show more speakers button */
-{{
-  const $speakersButton = document.querySelector(".js-speakers-btn");
-  const $speakersBox = document.querySelector(".js-speakers-box");
-  const $speakersList = document.querySelector(".js-speakers-list");
-  $speakersButton.addEventListener("click", speakersButtonClickHandler, false);
   const $secondarySpeakers = document.querySelectorAll(".js-speakers-item");
   if (!$secondarySpeakers.length) {
     $speakersButton.classList.add("hide");
   }
   
   function speakersButtonClickHandler(e) {
-    $speakersButton.classList.add("hide");
-    $speakersList.classList.remove("speakers__list1--hide");
+     if (!isOpened) {
+      yOffset = window.pageYOffset;
+      isOpened = true;
+      // $speakersFirstList.addClass("speakers__list--margin");
+      $speakersSecondList.slideDown(300);
+      $speakersButton.text('Скрыть спикеров');
+    } else {
+      window.scrollTo(0, yOffset);
+      isOpened = false;
+      // $speakersFirstList.removeClass("speakers__list--margin");
+      $speakersSecondList.slideUp(300);
+      $speakersButton.text('Показать больше спикеров');
+    }
+    // $speakersButton.classList.add("hide");
   }
 }}
 
@@ -225,35 +79,10 @@ import mediumZoom from 'medium-zoom';
 		accessibility: false,
 		prevArrow: $(".js-result-prev"),
     nextArrow: $(".js-result-next"),
-	  // autoplay: true,
-	  // autoplaySpeed: 5000,
 	  infinite: true,
 	  speed: 500,
 	  pauseOnFocus: true,
 	  pauseOnHover: false,
-		// responsive: [
-			// {
-			// 	breakpoint: 1071,
-			// 	settings: {
-			// 		slidesToShow: 3,
-			// 		slidesToScroll: 3,
-			// 	},
-			// },
-			// {
-			// 	breakpoint: 851,
-			// 	settings: {
-			// 		slidesToShow: 2,
-			// 		slidesToScroll: 2,
-			// 	},
-			// },
-			// {
-			// 	breakpoint: 451,
-			// 	settings: {
-			// 		slidesToShow: 1,
-			// 		slidesToScroll: 1,
-			// 	},
-			// },
-		// ],
   });
 }}
 
@@ -264,40 +93,9 @@ import mediumZoom from 'medium-zoom';
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: false,
-		// accessibility: false,
 		prevArrow: $(".js-feedback-prev"),
     nextArrow: $(".js-feedback-next"),
-	  // autoplay: true,
-	  // autoplaySpeed: 5000,
 	  infinite: true,
-	  // speed: 500,
-	  // pauseOnFocus: true,
-    // pauseOnHover: false,
-    // centerMode: true,
-    // variableWidth: true,
-		// responsive: [
-			// {
-			// 	breakpoint: 1071,
-			// 	settings: {
-			// 		slidesToShow: 3,
-			// 		slidesToScroll: 3,
-			// 	},
-			// },
-			// {
-			// 	breakpoint: 851,
-			// 	settings: {
-			// 		slidesToShow: 2,
-			// 		slidesToScroll: 2,
-			// 	},
-			// },
-			// {
-			// 	breakpoint: 451,
-			// 	settings: {
-			// 		slidesToShow: 1,
-			// 		slidesToScroll: 1,
-			// 	},
-			// },
-		// ],
   });
 }}
 
@@ -305,7 +103,11 @@ import mediumZoom from 'medium-zoom';
 
 /* Countdown */
 {{
-  const targetDate = cfg.countdownTargetDate.getTime();
+
+  const $countdown = document.querySelector(".js-countdown");
+  // console.log($countdown.dataset.to);
+  const targetDate = new Date($countdown.dataset.to).getTime();
+  // console.log(targetDate);
   const $days = document.querySelector(".js-countdown-days");
   const $hours = document.querySelector(".js-countdown-hours");
   const $minutes = document.querySelector(".js-countdown-minutes");
@@ -323,10 +125,10 @@ import mediumZoom from 'medium-zoom';
       clearInterval(timer);
       return;
     }
-    let days = Math.round(diff/3600/24);
-    let hours = Math.round(diff/3600%24);
-    let minutes = Math.round(diff/60%60);
-    let seconds = Math.round(diff%60);
+    let days = Math.floor(diff/3600/24);
+    let hours = Math.floor(diff/3600%24);
+    let minutes = Math.floor(diff/60%60);
+    let seconds = Math.floor(diff%60);
     
     const daysLabel = declOfNum(days, ['День', 'Дня', 'Дней']);
     const hoursLabel = declOfNum(hours, ['Час', 'Часа', 'Часов']);
@@ -387,11 +189,46 @@ import mediumZoom from 'medium-zoom';
 	});
 }}
 
-
-/* Diploms zoom */
-/* https://www.npmjs.com/package/medium-zoom */
+/* fancybox */
 {{
-  mediumZoom('.cert__image img', {
-    // background: "#000000",
+  /* закрывашки */
+  $(".js-modal-close").on("click touchstart", () => {
+    // console.log(111);
+    $.fancybox.close(true);
+  })
+  /* дипломы */
+  $('[data-fancybox="diploms"]').fancybox({
+    loop: true,
+  });
+  /* модалки */
+  $('.js-modal-btn').fancybox({
+    smallBtn: false,
+    btnTpl: {
+      close: "",
+    }
+  });
+  /* видео - на атрибутах, без опций */
+
+  /* для теста - попапы в зависимости от ответа сервера */
+  const options = {
+    smallBtn: false,
+    btnTpl: {
+      close: "",
+    }
+  };
+  $(".js-action-btn").on("click", (e) => {
+    e.preventDefault();
+    const rnd = Math.random();
+    if (rnd > 0.5) {
+      $.fancybox.open({
+        src: '#js-modal-success',
+        ...options,
+      });
+    } else {
+      $.fancybox.open({
+        src: '#js-modal-error',
+        ...options,
+      });
+    }
   });
 }}

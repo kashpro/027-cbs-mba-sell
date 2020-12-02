@@ -38,9 +38,9 @@
       </div>
       <span class="header__text2">Старт ПЕРВОГО ПОТОКА 8 декабря!</span>
       <a href="tel:84951264084" class="header__link">8 (495) 126-40-84</a>
-      <button class="btn header__btn js-btn-consult">Получить консультацию</button>
+      <button class="btn header__btn js-modal-btn" data-src="#js-modal-consult">Получить консультацию</button>
       <!-- <button class="butn header__btn js-btn-consult">Получить консультацию</button> -->
-      <div class="header__sandwich js-btn-start">
+      <div class="header__sandwich js-modal-btn" data-src="#js-modal-start">
         <svg width="34" height="21" viewBox="0 0 34 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="34" height="3"/>
           <rect y="9" width="34" height="3"/>
@@ -58,7 +58,7 @@
           <p class="banner__text2">Чтобы <b>выйти на топовый уровень</b> управления продажами, <b>удвоить прибыль компании</b> и существенно <b>повысить свой заработок.</b></p>
           <p class="banner__text3">ОНЛАЙН-КУРС нового поколения 2021 для директоров по продажам, руководителей отделов и амбициозных менеджеров.</p>
           <p class="banner__text3">Это курс для лидеров! Для тех, кто осознает, что глубинное понимание сферы современных продаж - это мастхэв для каждого, кто хочет добиться успеха!</p>
-          <button class="btn banner__btn js-btn-consult">Получить консультацию</button>
+          <button class="btn banner__btn js-modal-btn" data-src="#js-modal-consult">Получить консультацию</button>
         </div>
         <!-- <div class="banner__box2"> -->
           <ul class="banner__list">
@@ -110,7 +110,7 @@
             <p class="foryou__text">который хочет говорить на одном языке с отделом продаж, чтобы понимать когда нужно делегировать полномочия, оценивать работу отдела, знать инструменты, которые могут увеличить выручку и вывести компанию на новые пути развития</p>
           </li>
         </ul>
-        <button class="btn foryou__btn js-btn-consult">Получить консультацию</button>
+        <button class="btn foryou__btn js-modal-btn" data-src="#js-modal-consult">Получить консультацию</button>
       </div>
     </section>
     <div class="decor1">
@@ -210,7 +210,7 @@
       <div class="container discount__container">
         <span class="discount__value">Скидка <span>-55%</span></span>
         <h2 class="discount__title">Не тратьте зря время - инвестируйте в будущее</h2>
-        <button class="btn btn--white discount__btn js-btn-consult">Получить консультацию</button>
+        <button class="btn btn--white discount__btn js-modal-btn" data-src="#js-modal-consult">Получить консультацию</button>
       </div>
     </section>
     <section class="speakers">
@@ -219,7 +219,7 @@
           <span class="speakers__text1">Спикеры программы</span>
           <h2 class="speakers__title section-title">Преподаватели CITY BUSINESS SCHOOL<span>:</span></h2>
           <div class="speakers__box1 js-speakers-box">
-            <ul class="speakers__list1">
+            <ul class="speakers__list1 js-speakers-first-list">
               <li class="speakers__item1">
                 <div class="speakers__image1"><img src="./assets/images/speakers_01.jpg" alt="Алексей Урванцев"></div>
                 <div class="speakers__box2">
@@ -257,7 +257,9 @@
                   </div>
                 </div>
               </li>
-              <li class="speakers__item1">
+            </ul>
+            <ul class="speakers__list1 js-speakers-second-list" style="display: none;">
+              <li class="speakers__item1 js-speakers-item">
                 <div class="speakers__image1"><img src="./assets/images/speakers_02b.jpg" alt="Альберт Тютин"></div>
                 <div class="speakers__box2">
                   <span class="speakers__name1">Альберт Тютин</span>
@@ -267,7 +269,7 @@
                   </div>
                 </div>
               </li>
-              <li class="speakers__item1">
+              <li class="speakers__item1 js-speakers-item">
                 <div class="speakers__image1"><img src="./assets/images/speakers_02c.jpg" alt="Андрей Ващенко"></div>
                 <div class="speakers__box2">
                   <span class="speakers__name1">Андрей Ващенко</span>
@@ -277,34 +279,6 @@
                   </div>
                 </div>
               </li>
-            </ul>
-            <ul class="speakers__list1 speakers__list1--hide js-speakers-list">
-              <!-- <li class="speakers__item1 js-speakers-item">
-                <div class="speakers__image1"><img src="./assets/images/speakers_02.jpg" alt="Пантелеймон Константинопольский"></div>
-                <div class="speakers__box2">
-                  <span class="speakers__name1">Пантелеймон Константинопольский</span>
-                  <div class="speakers__desc">
-                    <p class="speakers__text2">Эксперт по продажам, переговорам и деловой риторике в HR</p>
-                    <p class="speakers__text2">Лауреат Деловой Премии «Капитаны российского бизнеса» 2019 в номинации «Лучший бизнес-тренер» (организатор - журнал «Управление персоналом»)</p>
-                    <p class="speakers__text2">
-                      ТОП-20 лучших российских тренеров:<br>
-                      - по продажам (рейтинг SalesPortal.ru)<br>
-                      - по ораторскому искусству (HUBSpeakers.ru)</p>
-                    <p class="speakers__text2">Ведущий программ на MediaMetrics.tv</p>
-                  </div>
-                </div>
-              </li> -->
-              <!-- <li class="speakers__item1 js-speakers-item">
-                <div class="speakers__image1"><img src="./assets/images/speakers_02.jpg" alt="Пантелеймон Константинопольский"></div>
-                <div class="speakers__box2">
-                  <span class="speakers__name1">Пантелеймон Константинопольский</span>
-                  <div class="speakers__desc">
-                    <p class="speakers__text2">Директор по продажам и член совета директоров школы бизнеса City Business School</p>
-                    <p class="speakers__text2">Эксперт-практик в области построения отделов продаж с нуля, и дистанционных отделов продаж</p>
-                    <p class="speakers__text2">Спикер образовательных программ City Business School</p>
-                  </div>
-                </div>
-              </li> -->
             </ul>
           </div>
           
@@ -348,7 +322,7 @@
             <p class="gift__text">Апгрейд ваших представлений о современных продажах гарантирован!</p>
             <p class="gift__text">Это наша миссия!</p> -->
             <p class="gift__text">Запишитесь на курс <b>«MBA. ДИРЕКТОР ПО ПРОДАЖАМ»</b> и получите в подарок доступ к нашему легендарному продукту <b>«ЦЕЛЬ Х»</b> - авторской программе по постановке и достижению целей</p>
-            <button class="btn gift__btn js-btn-discount">Записаться</button>
+            <button class="btn gift__btn js-modal-btn" data-src="#js-modal-discount">Записаться</button>
           </div>
         </div>
         <!-- <button class="btn gift__btn js-btn-gift">Получить подарок</button> -->
@@ -551,7 +525,7 @@
       </div>
       <div class="program__decor">
         <div class="program__box3">
-          <button class="btn program__btn js-btn-plan">Запросить подробную программу</button>
+          <button class="btn program__btn js-modal-btn" data-src="#js-modal-program">Запросить подробную программу</button>
         </div>
         
       </div>
@@ -568,7 +542,7 @@
         <div class="container video-how__container">
           <div class="video-how__video">
             <!-- <button class="video-how__btn js-video-btn" data-id='8mhYReoYgiQ'>Play video</button> -->
-            <button class="video-how__btn js-video-btn" data-vimeo-url="https://player.vimeo.com/video/358751794">Play video</button>
+            <button class="video-how__btn" data-fancybox data-src="https://player.vimeo.com/video/358751794">Play video</button>
             <p class="video-how__text">Посмотрите, как все устроено, за 2 минуты</p>
           </div>
         </div>
@@ -583,7 +557,7 @@
     <section class="demo">
       <div class="container demo__container">
         <h2 class="demo__title">Лучшие студенты по итогу курса будут иметь возможность получить групповую или личную консультацию</h2>
-        <button class="btn demo__btn js-btn-discount">Записаться</button>
+        <button class="btn demo__btn js-modal-btn" data-src="#js-modal-discount">Записаться</button>
       </div>
     </section>
     <section class="when">
@@ -652,24 +626,20 @@
         </div>
       </div>
     </section> -->
-    <section class="cert">
-      <div class="cert__decor cert__decor--left"></div>
-      <div class="cert__decor cert__decor--right"></div>
-      <div class="container cert__container">
-        <h2 class="cert__title section-title">По окончании обучения вы получите<span>:</span></h2>
-        <ul class="cert__list">
-          <li class="cert__item">
-            <p class="cert__text1">Диплом установленного образца о повышении квалификации с международным приложением</p>
-            <div class="cert__image">
-              <img src="./assets/images/cert_01_big.png" alt="Диплом установленного образца о повышении квалификации с международным приложением">
-            </div>
+    <section class="diplom">
+      <div class="diplom__decor diplom__decor--left"></div>
+      <div class="diplom__decor diplom__decor--right"></div>
+      <div class="container diplom__container">
+        <h2 class="diplom__title section-title">По окончании обучения вы получите<span>:</span></h2>
+        <ul class="diplom__list">
+          <li class="diplom__item">
+            <p class="diplom__text1">Диплом установленного образца о повышении квалификации с международным приложением</p>
+            <div class="diplom__image" data-fancybox="diploms" data-src="./assets/images/cert_01_big.png"><img src="./assets/images/cert_01_big.png" alt="Образец диплома"></div>
           </li>
-          <li class="cert__item">
-            <p class="cert__text1">Диплом Европейской Ассоциации Дистанционного Обучения и Образования</p>
-            <p class="cert__text2">(European Distance Learning and Education Association)</p>
-            <div class="cert__image">
-              <img src="./assets/images/cert_02_big.png" alt="Диплом Европейской Ассоциации Дистанционного Обучения и Образования">
-            </div>
+          <li class="diplom__item">
+            <p class="diplom__text1">Диплом Европейской Ассоциации Дистанционного Обучения и Образования</p>
+            <p class="diplom__text2">(European Distance Learning and Education Association)</p>
+            <div class="diplom__image" data-fancybox="diploms" data-src="./assets/images/cert_02_big.png"><img src="./assets/images/cert_02_big.png" alt="Образец диплома"></div>
           </li>
         </ul>
       </div>
@@ -701,7 +671,7 @@
           </ol>
         </div>
         <span class="why__text2">Пройдите обучение и станьте экспертом №1 в своей отрасли</span>
-        <button class="btn why__btn js-btn-consult">Получить консультацию</button>
+        <button class="btn why__btn js-modal-btn" data-src="#js-modal-consult">Получить консультацию</button>
       </div>
     </section>
     <section class="status">
@@ -736,7 +706,7 @@
           <li class="feedback__item1">
             <div class="feedback__image">
               <img src="./assets/images/feedback_01.jpg" alt="Татьяна Смольянинова">
-              <button class="feedback__btn js-video-btn" data-id='yD_ZNUV-BZw'>Play Video</button>
+              <button class="feedback__btn" data-fancybox data-src="https://www.youtube.com/watch?v=yD_ZNUV-BZw">Play Video</button>
             </div>
             <span class="feedback__name">Татьяна Смольянинова</span>
             <span class="feedback__role">Директор по продажам</span>
@@ -744,7 +714,7 @@
           <li class="feedback__item1">
             <div class="feedback__image">
               <img src="./assets/images/feedback_02.jpg" alt="Сергей Шматов">
-              <button class="feedback__btn js-video-btn" data-id='UFcdcXUC30Y'>Play Video</button>
+              <button class="feedback__btn" data-fancybox data-src="https://www.youtube.com/watch?v=UFcdcXUC30Y">Play Video</button>
             </div>
             <span class="feedback__name">Сергей Шматов</span>
             <span class="feedback__role">Бизнес-тренер</span>
@@ -891,7 +861,7 @@
             <span class="cost__text5">Супер СКИДКА в период предпродажи</span>
             <p class="cost__text6">Успейте записаться на первый поток курса, который стартует <span>8 декабря 2020</span> года по самой низкой цене!</p>
             <p class="cost__text6">ПЕРВЫЙ ПОТОК будет самым насыщенным и самым мощным – внимание будет оказано каждому студенту персонально!</p>
-            <button class="btn cost__btn js-btn-discount">Хочу поступить</button>
+            <button class="btn cost__btn js-modal-btn" data-src="#js-modal-discount">Хочу поступить</button>
           </div>
         </div>
       </div>
@@ -899,9 +869,9 @@
     <section class="countdown">
       <div class="container countdown__container">
         <h2 class="countdown__title">Следующее поднятие цены</h2>
-        <ul class="countdown__list">
+        <ul class="countdown__list js-countdown" data-to="2021-01-01T00:00:00+03:00">
           <li class="countdown__item">
-            <span class="countdown__digit js-countdown-days">0</span>
+            <span class="countdown__digit js-countdown-days">00</span>
             <span class="countdown__label js-countdown-days-label">Дней</span>
           </li>
           <li class="countdown__item">
@@ -971,7 +941,7 @@
               <input type="checkbox" id="agree" class="action__checkbox">
               <label for="agree" class="action__label">Нажимая на кнопку «Получить консультацию», вы принимаете условия <a href="#" class="action__link">политики конфиденциальности</a></label>
             </div>
-            <button class="btn action__btn">Получить консультацию</button>
+            <button class="btn action__btn js-action-btn">Получить консультацию</button>
             <p class="action__text4">Специалист приемной комиссии City Business School свяжется с вами в ближайшее время</p>
           </form>
         </div>
@@ -1021,97 +991,114 @@
     </section>
   </footer>
 
-  <div class="modal js-modal">
-    <div class="modal__content">
-      <div class="modal__close js-modal-close"></div>
-      <div class="modal__component js-modal-component"></div>
+  <!-- Popups -->
+  <div class="modal-consult" id="js-modal-consult">
+    <div class="modal-consult__content">
+      <div class="modal-consult__close js-modal-close"></div>
+      <h3 class="modal-consult__title">Персональная консультация</h3>
+      <form class="modal-consult__form">
+        <input type="text" inputmode="text" class="modal-consult__input" placeholder="Имя">
+        <input type="text" inputmode="email" class="modal-consult__input" placeholder="Email">
+        <input type="text" inputmode="phone" class="modal-consult__input" placeholder="Телефон">
+        <div class="modal-consult__box2">
+          <input type="checkbox" id="agree2" class="modal-consult__checkbox">
+          <label for="agree2" class="modal-consult__label">Нажимая на кнопку "Получить консультацию", вы принимаете условия <a href="https://cs9.pikabu.ru/post_img/2020/11/16/7/1605525905175655899.webp" target="blank" class="modal-consult__link">политики конфиденциальности</a></label>
+        </div>
+        <button class="btn modal-consult__btn">Получить консультацию</button>
+      </form>
     </div>
   </div>
 
-  <div class="video video-show js-video">
-    <div class="video__close js-video-close"></div>
-    <div id="yt-player" class="video__player"></div>
-    <div id="vm-player" class="video__player"></div>
-  </div>
-  <!-- <div class="modal-content js-modal-gift">
-    <h3 class="modal-content__title">Забрать подарок</h3>
-    <form class="modal-content__form">
-      <input type="text" inputmode="text" class="modal-content__input" placeholder="Имя">
-      <input type="text" inputmode="email" class="modal-content__input" placeholder="Email">
-      <input type="text" inputmode="phone" class="modal-content__input" placeholder="Телефон">
-      <div class="modal-content__box2">
-        <input type="checkbox" id="agree2" class="modal-content__checkbox">
-        <label for="agree2" class="modal-content__label">Нажимая на кнопку "Забрать подарок", вы принимаете условия <a href="https://cs9.pikabu.ru/post_img/2020/11/16/7/1605525905175655899.webp" target="blank" class="modal-content__link">политики конфиденциальности</a></label>
+  <div class="modal-program" id="js-modal-program">
+    <div class="modal-program__content">
+      <div class="modal-program__close js-modal-close"></div>
+      <span class="modal-program__text">Заберите полный Учебный План образовательной программы</span>
+      <h3 class="modal-program__title"> «MBA. Директор по производству»</h3>
+      <div class="modal-program__box1">
+        <div class="modal-program__image"></div>
+        <form class="modal-program__form">
+          <input type="text" inputmode="text" class="modal-program__input" placeholder="Имя">
+          <input type="text" inputmode="email" class="modal-program__input" placeholder="Email">
+          <input type="text" inputmode="phone" class="modal-program__input" placeholder="Телефон">
+          <div class="modal-program__box2">
+            <input type="checkbox" id="agree3" class="modal-program__checkbox">
+            <label for="agree3" class="modal-program__label">Нажимая на кнопку "Забрать учебный план", вы принимаете условия <a href="https://cs9.pikabu.ru/post_img/2020/11/16/7/1605525905175655899.webp" target="blank" class="modal-program__link">политики конфиденциальности</a></label>
+          </div>
+          <button class="btn modal-program__btn">Забрать учебный план</button>
+        </form>
       </div>
-      <button class="btn modal-content__btn">Забрать подарок</button>
-    </form>
-  </div> -->
-
-  <div class="modal-consult js-modal-consult">
-    <h3 class="modal-consult__title">Персональная консультация</h3>
-    <form class="modal-consult__form">
-      <input type="text" inputmode="text" class="modal-consult__input" placeholder="Имя">
-      <input type="text" inputmode="email" class="modal-consult__input" placeholder="Email">
-      <input type="text" inputmode="phone" class="modal-consult__input" placeholder="Телефон">
-      <div class="modal-consult__box2">
-        <input type="checkbox" id="agree3" class="modal-consult__checkbox">
-        <label for="agree3" class="modal-consult__label">Нажимая на кнопку "Получить консультацию", вы принимаете условия <a href="https://cs9.pikabu.ru/post_img/2020/11/16/7/1605525905175655899.webp" target="blank" class="modal-consult__link">политики конфиденциальности</a></label>
-      </div>
-      <button class="btn modal-consult__btn">Получить консультацию</button>
-    </form>
-  </div>
-
-  <div class="modal-program js-modal-plan">
-    <span class="modal-program__text">Заберите полный Учебный План образовательной программы</span>
-    <h3 class="modal-program__title">«MBA. ДИРЕКТОР ПО ПРОДАЖАМ»</h3>
-    <!-- <div class="modal-content__box1"> -->
-      <!-- <div class="modal-content__image"></div> -->
-    <form class="modal-program__form">
-      <input type="text" inputmode="text" class="modal-program__input" placeholder="Имя">
-      <input type="text" inputmode="email" class="modal-program__input" placeholder="Email">
-      <input type="text" inputmode="phone" class="modal-program__input" placeholder="Телефон">
-      <div class="modal-program__box2">
-        <input type="checkbox" id="agree4" class="modal-program__checkbox">
-        <label for="agree4" class="modal-program__label">Нажимая на кнопку "Забрать учебный план", вы принимаете условия <a href="https://cs9.pikabu.ru/post_img/2020/11/16/7/1605525905175655899.webp" target="blank" class="modal-program__link">политики конфиденциальности</a></label>
-      </div>
-      <button class="btn modal-program__btn">Забрать учебный план</button>
-    </form>
-    <!-- </div> -->
-  </div>
-
-  <div class="modal-discount js-modal-discount">
-    <div class="modal-discount__box1">
-      <span class="modal-discount__text1">Оставьте заявку!</span>
-      <span class="modal-discount__text2">И получите возможность записаться на курс</span>
-      <span class="modal-discount__text3"><span>«</span>MBA. ДИРЕКТОР ПО ПРОДАЖАМ<span>»</span></span>
-      <span class="modal-discount__text4">со скидкой <span>55%</span></span>
-        </span>
     </div>
-    <form class="modal-discount__form">
-      <h3 class="modal-discount__title">Получить скидку</h3>
-      <input type="text" inputmode="text" class="modal-discount__input" placeholder="Имя">
-      <input type="text" inputmode="email" class="modal-discount__input" placeholder="Email">
-      <input type="text" inputmode="phone" class="modal-discount__input" placeholder="Телефон">
-      <div class="modal-discount__box2">
-        <input type="checkbox" id="agree4" class="modal-discount__checkbox">
-        <label for="agree4" class="modal-discount__label">Нажимая на кнопку "Оставить заявку", вы принимаете условия <a href="https://cs9.pikabu.ru/post_img/2020/11/16/7/1605525905175655899.webp" target="blank" class="modal-discount__link">политики конфиденциальности</a></label>
+  </div>
+
+  <div class="modal-discount" id="js-modal-discount">
+    <div class="modal-discount__content">
+      <div class="modal-discount__close js-modal-close"></div>
+      <div class="modal-discount__box1">
+        <span class="modal-discount__text1">Оставьте заявку!</span>
+        <span class="modal-discount__text2">И получите возможность записаться на курс</span>
+        <span class="modal-discount__text3"><span>«</span>MBA. ДИРЕКТОР ПО ПРОИЗВОДСТВУ<span>»</span></span>
+        <span class="modal-discount__text4">со скидкой <span>55%</span></span>
+          </span>
       </div>
-      <button class="btn modal-discount__btn">Оставить заявку</button>
-    </form>
+      <form class="modal-discount__form">
+        <h3 class="modal-discount__title">Получить скидку</h3>
+        <input type="text" inputmode="text" class="modal-discount__input" placeholder="Имя">
+        <input type="text" inputmode="email" class="modal-discount__input" placeholder="Email">
+        <input type="text" inputmode="phone" class="modal-discount__input" placeholder="Телефон">
+        <div class="modal-discount__box2">
+          <input type="checkbox" id="agree4" class="modal-discount__checkbox">
+          <label for="agree4" class="modal-discount__label">Нажимая на кнопку "Оставить заявку", вы принимаете условия <a href="https://cs9.pikabu.ru/post_img/2020/11/16/7/1605525905175655899.webp" target="blank" class="modal-discount__link">политики конфиденциальности</a></label>
+        </div>
+        <button class="btn modal-discount__btn">Оставить заявку</button>
+      </form>
+    </div>
   </div>
 
-  <div class="modal-start js-modal-start">
-    <h3 class="modal-start__title">Старт ПЕРВОГО ПОТОКА 8 декабря!</h3>
-    <button class="btn modal-start__btn">Присоединиться</button>
-    <a href="tel:84951264084" class="modal-start__link">8 (495) 126-40-84</a>
+  <div class="modal-start" id="js-modal-start">
+    <div class="modal-start__content">
+      <div class="modal-start__close js-modal-close"></div>
+      <h3 class="modal-start__title">Старт ПЕРВОГО ПОТОКА 8 декабря!</h3>
+      <button class="btn modal-start__btn">Присоединиться</button>
+      <a href="tel:84951264084" class="modal-start__link">8 (495) 126-40-84</a>
+    </div>
   </div>
 
-  <script>
-    const mode = "prod";
-    const cfg = {
-      showStats: mode === "dev",
-      countdownTargetDate: new Date("2021-01-01T00:00:00+08:00"),
-    };
-  </script>
+  <div class="modal-error" id="js-modal-error">
+    <div class="modal-error__content">
+      <div class="modal-error__close js-modal-close"></div>
+      <h3 class="modal-error__title">Ошибка!</h3>
+      <span class="modal-error__text1">Заявка не была отправлена, попробуйте ещё раз!</span>
+      <button class="btn modal-error__btn js-modal-close">Вернуться назад</button>
+      <span class="modal-error__text2">Если у вас возникли проблемы, обращайтесь к нам:</span>
+      <div class="modal-error__box1">
+        <a href="tel:84956680909" class="modal-error__link modal-error__link--tel">+7 (495) 668-09-09</a>
+        <a href="mailto:info@e-mba.ru" class="modal-error__link modal-error__link--email">info@e-mba.ru</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-success" id="js-modal-success">
+    <div class="modal-success__content">
+      <div class="modal-success__close js-modal-close"></div>
+      <h3 class="modal-success__title">Спасибо!</h3>
+      <span class="modal-success__text1">Ваша заявка успешно принята!</span>
+      <span class="modal-success__text3">В ближайшее время с вами свяжется наш специалист, для того чтобы оформить документы и выбрать удобную датустарта обучения</span>
+      <span class="modal-success__text4">Спасибо за то, что выбрали <b>City Business School</b>! <i>Желаем продуктивного обучения и высоких результатов!</i></span>
+      <button class="btn modal-success__btn js-modal-close">Вернуться назад</button>
+      <span class="modal-success__text2">Если у вас возникли проблемы, обращайтесь к нам:</span>
+      <div class="modal-success__box1">
+        <a href="tel:84956680909" class="modal-success__link modal-success__link--tel">+7 (495) 668-09-09</a>
+        <a href="mailto:info@e-mba.ru" class="modal-success__link modal-success__link--email">info@e-mba.ru</a>
+      </div>
+      <div class="modal-success__box2">
+        <span class="modal-success__text5">Или напишите нам в любой мессенджер</span>
+        <ul class="modal-success__list">
+          <li class="modal-success__item"><a target="blank" href="#" class="modal-success__soc-link modal-success__soc-link--tg" title="telegram">telegram</a></li>
+          <li class="modal-success__item"><a target="blank" href="#" class="modal-success__soc-link modal-success__soc-link--vk" title="vkontakte">vkontakte</a></li>
+          <li class="modal-success__item"><a target="blank" href="#" class="modal-success__soc-link modal-success__soc-link--fb" title="facebook">facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
