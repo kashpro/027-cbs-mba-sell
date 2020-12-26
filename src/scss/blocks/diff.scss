@@ -2,8 +2,8 @@
   margin-bottom: 100px;
   $this: &;
   @media (max-width: 767px) {
-		margin-bottom: 50px;
-	}
+    margin-bottom: 50px;
+  }
   &__container {
     display: flex;
     @media (max-width: 1365px) {
@@ -15,7 +15,6 @@
     }
   }
   &__title {
-    // background-color: $temp1;
     flex: 0 1 433px;
     font-weight: bold;
     font-size: 50px;
@@ -33,7 +32,6 @@
     }
   }
   &__list {
-    // background-color: $temp2;
     flex: 0 1 872px;
     display: flex;
     flex-wrap: wrap;
@@ -64,10 +62,6 @@
     }
     &:nth-child(1) {
       background: #E64B52;
-      // padding-right: 50px; //!!!
-      // #{$this}__text { //!!!
-      //   font-size: 30px;
-      // }
       @media (max-width: 991px) {
         order: 1;
       }

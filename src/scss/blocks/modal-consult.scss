@@ -22,7 +22,6 @@
     cursor: pointer;
     position: absolute;
     &:before, &::after {
-      // transition: all 0.1s ease;
       position: absolute;
       display: block;
       content: "";
@@ -45,7 +44,6 @@
           background-color: #E64B52;
         }
       }
-      
     }
   }
   &__title {
@@ -53,7 +51,6 @@
     font-size: 40px;
     line-height: 110%;
     text-align: center;
-    
     margin-bottom: 25px;
     max-width: 440px;
     @media (max-width: 767px) {
@@ -78,7 +75,6 @@
     border-bottom: 1px solid #1A3788;
     font-size: 20px;
     line-height: 135%;
-    // color: #1a3788;
     margin-bottom: 38px;
     @media (max-width: 767px) {
       font-size: 12px;
@@ -113,7 +109,6 @@
     max-width: 378px;
     font-size: 14px;
     line-height: 16px;
-    // color: #1a3788;
     cursor: pointer;
     transition: all .2s ease;
     @media (max-width: 767px) {
@@ -122,7 +117,7 @@
     }
     &:hover {
       @media (min-width: 1280px) {
-	      color: #E64B52;
+        color: #E64B52;
       }
     }
   }
@@ -138,11 +133,10 @@
     }
     &:hover {
       @media (min-width: 1280px) {
-	      color: #E64B52;
+        color: #E64B52;
       }
     }
   }
-
   &__btn {
     width: 100%;
     padding: 18px;
@@ -154,7 +148,6 @@
     }
   }
 }
-
 .fancybox-content {
   padding: 0;
   background: transparent;

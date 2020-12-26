@@ -1,34 +1,14 @@
 .modal-discount {
   color: #1A3788;
   display: none;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // background-image: url("../assets/images/modal_discount_bg_01.svg");
-  // background-repeat: no-repeat;
-  // background-position: 117px 114px;
-  // background-position: 0px 0;
-  // background-size: 160px;
-  // @media (max-width: 1279px) {
-  //   flex-direction: column;
-  //   background-size: 130px;
-  //   background-position: 100% 215px;
-  // }
-  // @media (max-width: 767px) {
-  //   background-size: 93px;
-  //   background-position: 100% 185px;
-  // }
   &__content {
     background-image: url("../assets/images/modal_discount_bg_01.svg");
     background-repeat: no-repeat;
-  // background-position: 117px 114px;
     background-position: 44px 80%;
     background-size: 160px;
     position: relative;
     padding: 47px 100px 47px 100px;
     display: flex;
-    // flex-direction: column;
-    // align-items: center;
     border-radius: 20px;
     background-color: #ffffff;
     @media (max-width: 1365px) {
@@ -52,7 +32,6 @@
     cursor: pointer;
     position: absolute;
     &:before, &::after {
-      // transition: all 0.1s ease;
       position: absolute;
       display: block;
       content: "";
@@ -82,53 +61,24 @@
     font-size: 40px;
     line-height: 110%;
     text-align: center;
-    // color: #1A3788;
     margin-bottom: 25px;
-    // max-width: 440px;
     max-width: 100%;
     @media (max-width: 767px) {
       font-size: 25px;
     }
-    // @media (max-width: 1279px) {
-    //   text-align: center;
-    //   max-width: 477px;
-    //   font-size: 26px;
-    //   line-height: 135%;
-    // }
-    // @media (max-width: 767px) {
-    //   font-size: 15px;
-    // }
   }
   &__form {
     border-left: 1px solid #1A3788;
-    // background-color: $temp2;
-    // display: block;
-    // flex: 0 1 50%;
     width: 447px;
-    // flex: 0 0 447px;
     display: flex;
     flex-direction: column;
-    // margin-left: 529px;
     padding-left: 50px;
-    // border-right: 1px solid #091836;;
     flex-shrink: 0;
     @media (max-width: 1365px) {
       width: 100%;
       padding-left: 0;
       border-left: none;
     }
-    // @media (max-width: 1279px) {
-    //   margin-left: 0;
-    //   padding-left: 0;
-    //   margin-top: 120px;
-    // }
-    // @media (max-width: 767px) {
-    //   margin-top: 60px;
-    //   width: 100%;
-    // }
-    // &--ml {
-      
-    // }
   }
   &__input {
     padding-top: 4px;
@@ -138,12 +88,7 @@
     border-bottom: 1px solid #1A3788;
     font-size: 20px;
     line-height: 135%;
-    // color: #1A3788;
     margin-bottom: 38px;
-    // @media (max-width: 767px) {
-    //   font-size: 12px;
-    //   margin-bottom: 20px;
-    // }
     @media (max-width: 767px) {
       font-size: 12px;
       margin-bottom: 20px;
@@ -159,12 +104,8 @@
         }
       }
     }
-    // & + & {
-    //   margin-top: 38px;
-    // }
   }
   &__box2 {
-    // background-color: $temp4;
     display: flex;
     align-items: center;
     margin-bottom: 48px;
@@ -181,7 +122,6 @@
     max-width: 378px;
     font-size: 14px;
     line-height: 16px;
-    // color: #091836;
     cursor: pointer;
     transition: all 0.2s ease;
     @media (max-width: 767px) {
@@ -190,9 +130,8 @@
     }
     &:hover {
       @media (min-width: 1280px) {
-	      color: #E64B52;
+        color: #E64B52;
       }
-      
     }
   }
   &__link {
@@ -207,9 +146,8 @@
     }
     &:hover {
       @media (min-width: 1280px) {
-	      color: #E64B52;
+        color: #E64B52;
       }
-      
     }
   }
   &__btn {
@@ -222,26 +160,13 @@
       align-self: center;
     }
   }
-  // &__box1 {
-
-  // }
-  // &__image {
-
-  // }
   &__text1 {
     font-weight: 600;
     font-size: 35px;
     line-height: 135%;
     margin-bottom: 5px;
-    // @media (max-width: 1279px) {
-    //   text-align: center;
-    //   max-width: 477px;
-    //   font-size: 26px;
-    //   line-height: 135%;
-    // }
     @media (max-width: 1365px) {
       font-size: 35px;
-      // text-align: center;
     }
     @media (max-width: 767px) {
       font-size: 25px;
@@ -251,20 +176,10 @@
     }
   }
   &__box1 {
-    // background-image: url("../assets/images/modal_discount_bg_01.svg");
-    // background-repeat: no-repeat;
-    // background-size: 160px;
-    // background-position: -50px 100%;
-    // background-color: $temp1;
     flex: 0 1 50%;
     padding-right: 50px;
-    
     display: flex;
     flex-direction: column;
-    // @media (max-width: 1279px) {
-    //   padding-right: 0;
-    //   border-right: none;
-    // }
     @media (max-width: 1365px) {
       padding-right: 0;
       padding-bottom: 190px;
@@ -286,11 +201,6 @@
       font-size: 17px;
       text-align: center;
     }
-    // @media (max-width: 767px) {
-    //   font-size: 17px;
-    //   text-align: center;
-    //   max-width: none;
-    // }
   }
   &__text3 {
     font-weight: 600;
@@ -320,19 +230,11 @@
     text-align: right;
     @media (max-width: 1365px) {
       text-align: left;
-      // font-size: 20px;
     }
     @media (max-width: 767px) {
       font-size: 20px;
       align-self: flex-start;
     }
-    // @media (max-width: 1279px) {
-    //   text-align: left;
-    // }
-    // @media (max-width: 767px) {
-    //   font-size: 20px;
-    //   line-height: 27px;
-    // }
     span {
       color: #E64B52;
     }

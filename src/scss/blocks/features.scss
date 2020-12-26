@@ -1,11 +1,11 @@
 .features {
   margin-bottom: 80px;
   @media (max-width: 991px) {
-	  margin-bottom: 57px;
+    margin-bottom: 57px;
   }
   @media (max-width: 767px) {
-		margin-bottom: 30px;
-	}
+    margin-bottom: 30px;
+  }
   &__container {
     @media (max-width: 767px) {
       padding-left: 0;

@@ -1,7 +1,7 @@
 .learn {
   @media (max-width: 767px) {
-		margin-bottom: 74px;
-	}
+    margin-bottom: 74px;
+  }
   &__title {
     margin-bottom: 65px;
     @media (max-width: 1365px) {
@@ -33,7 +33,6 @@
       margin-bottom: 45px;
     }
     @media (max-width: 767px) {
-      // background-color: $temp1;
       background-image: url("../assets/images/logo_icons_sprite_02_mob.png");
       flex: 0 0 112px;
       height: 48px;

@@ -12,15 +12,11 @@
     background-size: 270px;
   }
   @media (max-width: 767px) {
-		padding-bottom: 30px;
-	}
+    padding-bottom: 30px;
+  }
   &__container {
     display: flex;
     flex-direction: column;
-    // background-color: #f90;
-    // @media (max-width: 991px) {
-    //   align-items: center;
-    // }
   }
   &__box1 {
     transition: all 0.5s ease;
@@ -57,26 +53,16 @@
   }
   &__list1 {
     transition: all 0.2s ease;
-    &:last-child {
-      // margin-bottom: 100px;
-    }
     &--hide {
-      // position: relative;
       display: none;
-      // visibility: hidden;
-      // opacity: 0;
     }
-    // background-color: $temp5;
-    
   }
   &__item1 {
-    // background-color: $temp4;
     display: flex;
     margin-bottom: 60px;
     align-items: center;
     @media (max-width: 991px) {
       flex-direction: column;
-      // margin-bottom: 47px;
     }
     @media (max-width: 767px) {
       margin-bottom: 40px;
@@ -89,7 +75,6 @@
     height: 360px;
     line-height: 0;
     margin-right: 85px;
-    // align-self: flex-start;
     @media (max-width: 1365px) {
       margin-left: 0;
       flex-shrink: 0;
@@ -138,9 +123,6 @@
       margin-bottom: 12px;
     }
   }
-  &__desc {
-
-  }
   &__text2 {
     font-size: 22px;
     line-height: 135%;
@@ -153,59 +135,6 @@
       font-size: 16px;
     }
   }
-  // &__list2 {
-  //   display: flex;
-  //   margin-bottom: 60px;
-  // }
-  // &__item2 {
-  //   flex: 0 1 427px;
-  //   // background-color: $temp3;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   & + & {
-  //     margin-left: 20px;
-  //   }
-  // }
-  // &__image2 {
-  //   position: relative;
-  //   z-index: 10;
-  //   line-height: 0;
-  //   width: 284px;
-  //   height: 284px;
-  //   margin-bottom: -65px;
-  //   img {
-  //     border-radius: 50%;
-  //     overflow: hidden;
-  //     width: 100%;
-  //     height: 100%;
-  //     object-fit: cover;
-  //   }
-  // }
-  // &__box3 {
-  //   position: relative;
-  //   z-index: 0;
-  //   // background-color: $temp1;
-  //   background: #FFFFFF;
-  //   padding-top: 85px;
-  // }
-  // &__name2 {
-  //   display: block;
-  //   font-weight: 500;
-  //   font-size: 24px;
-  //   line-height: 28px;
-  //   color: #0C1E42;
-  //   text-align: center;
-  //   margin-bottom: 2px;
-  // }
-  // &__role {
-  //   display: block;
-  //   font-size: 16px;
-  //   line-height: 150%;
-  //   text-align: center;    
-  //   color: #BBC6DD;
-  //   margin-bottom: 20px;
-  // }
   &__btn {
     padding: 14px;
     width: 365px;
@@ -216,5 +145,3 @@
     }
   }
 }
-
-

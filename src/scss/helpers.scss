@@ -1,81 +1,66 @@
 .container-wide {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .container {
-	// background-color: #f90;
-	margin: 0 auto;
-	max-width: 1320px;
-	border-top: 1px solid transparent;
-	@media (max-width: 1365px) {
-		max-width: 960px;
-	}
-	@media (max-width: 991px) {
-		max-width: 768px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	@media (max-width: 767px) {
-		max-width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
-		// max-width: 540px;
-	}
-	// @media (max-width: 575px) {
-	// 	max-width: 100%;
-	// 	padding-left: 10px;
-	// 	padding-right: 10px;
-	// }
+  margin: 0 auto;
+  max-width: 1320px;
+  border-top: 1px solid transparent;
+  @media (max-width: 1365px) {
+    max-width: 960px;
+  }
+  @media (max-width: 991px) {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .hide {
-	display: none !important;
+  display: none !important;
 }
 
 .fade {
-	visibility: hidden !important;
-	opacity: 0 !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .decor1 {
-	background-image: url("../assets/images/decor_01.svg");
-	background-repeat: no-repeat;
-	background-position: center 0;
-	@media (max-width: 991px) {
-		background-position: center 253px;
-		background-size: contain;
-	}
-	
+  background-image: url("../assets/images/decor_01.svg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  @media (max-width: 991px) {
+    background-position: center 253px;
+    background-size: contain;
+  }
+  
 }
 .decor2 {
-	background-image: url("../assets/images/decor_02.svg");
-	background-repeat: no-repeat;
-	padding-top: 119px;
-	@media (max-width: 991px) {
-		background-position: -123px 0px;
-		padding-top: 0;
-	}
-	@media (max-width: 767px) {
-		// background-image: none;
-		background-size: 150px;
-		background-position: -52px 150px;
-	}
+  background-image: url("../assets/images/decor_02.svg");
+  background-repeat: no-repeat;
+  padding-top: 119px;
+  @media (max-width: 991px) {
+    background-position: -123px 0px;
+    padding-top: 0;
+  }
+  @media (max-width: 767px) {
+    background-size: 150px;
+    background-position: -52px 150px;
+  }
 }
-
-//fast fix
-// @media (max-width:360px) {
-// 	body {
-// 		overflow-x: hidden;
-// 	}
-// }

@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding: 68px 95px 52px 95px;
     padding: 68px 57px 33px 57px;
     border-radius: 20px;
     background-color: #ffffff;
@@ -27,7 +26,6 @@
     cursor: pointer;
     position: absolute;
     &:before, &::after {
-      // transition: all 0.1s ease;
       position: absolute;
       display: block;
       content: "";
@@ -126,10 +124,8 @@
     }
   }
   &__box1 {
-    // background-color: $temp1;
     display: flex;
     justify-content: space-between;
-    // width: 100%;
     margin-bottom: 30px;
   }
   &__link {
@@ -182,7 +178,6 @@
     }
   }
   &__box2 {
-    // background-color: $temp2;
     display: flex;
     align-items: center;
     @media (max-width: 767px) {
@@ -201,7 +196,6 @@
   }
   &__list {
     display: flex;
-    // background-color: $temp2;
   }
   &__item {
     & + & {

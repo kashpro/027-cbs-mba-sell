@@ -1,8 +1,8 @@
 .status {
   margin-bottom: 100px;
   @media (max-width: 991px) {
-		margin-bottom: -2px;
-	}
+    margin-bottom: -2px;
+  }
   &__container {
     display: flex;
     @media (max-width: 1365px) {
@@ -23,9 +23,6 @@
     padding-right: 73px;
     padding-top: 82px;
     padding-bottom: 94px;
-    // @media (max-width: 1365px) {
-    //   top: 25px;
-    // }
     @media (max-width: 991px) {
       padding-left: 0;
       padding-right: 0;
@@ -127,7 +124,6 @@
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 36px;
-    // margin-top: 10px;
     @media (max-width: 767px) {
       font-size: 14px;
       margin-bottom: 30px;

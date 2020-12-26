@@ -37,7 +37,6 @@
       height: 49px;
       padding-right: 19px;
       margin-right: 17px;
-
     }
   }
   &__box1 {
@@ -81,7 +80,7 @@
     }
     &:hover {
       @media (min-width: 1280px) {
-	      text-decoration: underline;
+        text-decoration: underline;
         color: #dddddd;
       }
     }

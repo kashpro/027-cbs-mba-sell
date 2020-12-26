@@ -1,8 +1,8 @@
 .discount {
   margin-bottom: 76px;
   @media (max-width: 767px) {
-		margin-bottom: 30px;
-	}
+    margin-bottom: 30px;
+  }
   &__container {
     padding-left: 80px;
     padding-right: 80px;
@@ -24,9 +24,7 @@
     }
   }
   &__value {
-    // background-color: $temp1;
     font-size: 24px;
-    // line-height: 105%;
     text-align: center;
     color: #FFFFFF;
     display: block;
@@ -39,8 +37,6 @@
       margin-right: 15px;
       max-width: 78px;
     }
-
-
     span {
       font-size: 44px;
       font-weight: 700;
@@ -50,7 +46,6 @@
     }
   }
   &__title {
-    // background-color: $temp2;
     font-weight: bold;
     font-size: 40px;
     line-height: 40px;
@@ -69,7 +64,6 @@
     }
   }
   &__btn {
-    // background-color: $temp1;
     width: 328px;
     padding: 18px;
     @media (max-width: 1365px) {
@@ -79,8 +73,6 @@
       width: 100%;
       max-width: 340px;
       margin-top: 15px;
-      // margin-right: 15px;
-      // margin-left: 15px;
     }
   }
 }

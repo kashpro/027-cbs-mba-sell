@@ -17,7 +17,6 @@
     cursor: pointer;
     position: absolute;
     &:before, &::after {
-      // transition: all 0.1s ease;
       position: absolute;
       display: block;
       content: "";

@@ -6,10 +6,9 @@
   padding-bottom: 100px;
   margin-bottom: 146px;
   transform: skewY(-3deg);
-  // height: 500px;
   background: linear-gradient(180deg, #0C1E42 0%, #113669 118.14%);
   @media (max-width: 1365px) {
-		padding-bottom: 185px;
+    padding-bottom: 185px;
   }
   @media (max-width: 991px) {
     padding-bottom: 200px;
@@ -18,7 +17,7 @@
   @media (max-width: 767px) {
     padding-top: 50px;
     margin-bottom: 50px;
-	}
+  }
   &__container {
     transform: skewY(3deg);
   }
@@ -39,9 +38,6 @@
       max-width: none;
     }
   }
-  &__item {
-    
-  }
   &__box1 {
     transition: all 0.2s ease;
     cursor: pointer;
@@ -49,7 +45,6 @@
     padding-right: 28px;
     padding-left: 28px;
     padding-bottom: 22px;
-    // border: 2px solid transparent;
     @media (max-width: 1365px) {
       margin-bottom: 30px;
     }
@@ -66,10 +61,8 @@
           opacity: 1;
         }
       }
-      
     }
     &--active {
-      // border: 2px solid #FFFFFF;
       background-color: #E64B52;
       #{$this}__module {
         opacity: 1;
@@ -116,7 +109,6 @@
     opacity: 1;
     transition: all 0.2s ease;
     height: auto;
-    // max-height: 1000px;
     @media (max-width: 1365px) {
       position: static;
       width: auto;
@@ -124,19 +116,12 @@
     }
     @media (max-width: 991px) {
       margin-left: 15px;
-      // margin-bottom: 29px;
     }
-    // @media (max-width: 767px) {
-    //   margin-left: 0;
-    // }
     &--collapse {
-      // max-height: 0;
       height: 0;
-      // display: none;
       visibility: hidden;
       opacity: 0;
     }
-
   }
   &__subtitle {
     font-weight: bold;
@@ -160,7 +145,6 @@
     }
   }
   &__image {
-    // background-color: $temp1;
     width: 156px;
     height: 156px;
     line-height: 0;
@@ -180,7 +164,6 @@
     }
   }
   &__box2 {
-    // background-color: $temp2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,11 +197,8 @@
     width: 747px;
     height: 564px;
     position: absolute;
-    // background-color: #f90;
     bottom: -200px;
-    // right: 0;
     right: 0;
-    // right: calc(50% - 50%);
     transform: skewY(3deg);
     background-image: url("../assets/images/program_bg.png"), url("../assets/images/program_bg.svg") ;
     background-size: auto, auto;
@@ -231,8 +211,6 @@
       height: 237px;
       background-size: 180px, contain;
       right: auto;
-      // left: 233px;
-      // bottom: -66px;
       left: 11px;
       bottom: -70px;
     }
@@ -250,8 +228,6 @@
       font-size: 16px;
       padding: 18px;
       width: 310px;
-      // left: 49%;
-      // bottom: 23px;
     }
   }
   &__box3 {
